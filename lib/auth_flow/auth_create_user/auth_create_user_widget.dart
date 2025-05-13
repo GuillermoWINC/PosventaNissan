@@ -157,7 +157,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                       color: Colors.white,
                       fontSize: 22.0,
                       letterSpacing: 0.0,
-                      useGoogleFonts: false,
                     ),
               ),
               actions: [],
@@ -235,7 +234,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                           Padding(
@@ -264,7 +262,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                               .accent1,
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -328,8 +325,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                                             'Nissan Brand',
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            false,
                                                                       ),
                                                               icon: Icon(
                                                                 Icons
@@ -398,7 +393,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                               .accent1,
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -499,8 +493,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                                             'Nissan Brand',
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        useGoogleFonts:
-                                                                            false,
                                                                       ),
                                                               icon: Icon(
                                                                 Icons
@@ -640,7 +632,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 hintText: 'Concesionario...',
                                                 icon: Icon(
@@ -686,15 +677,15 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                 obscureText: false,
                                                 decoration: InputDecoration(
                                                   labelText: 'Nombre Completo',
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
@@ -759,7 +750,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 keyboardType:
                                                     TextInputType.emailAddress,
@@ -790,15 +780,15 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                 obscureText: false,
                                                 decoration: InputDecoration(
                                                   labelText: 'Email',
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
@@ -863,7 +853,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 keyboardType:
                                                     TextInputType.emailAddress,
@@ -895,15 +884,15 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                     !_model.passwordVisibility,
                                                 decoration: InputDecoration(
                                                   labelText: 'Contraseña',
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
@@ -990,7 +979,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 cursorColor:
                                                     FlutterFlowTheme.of(context)
@@ -1021,15 +1009,15 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                 decoration: InputDecoration(
                                                   labelText:
                                                       'Confirma Contraseña',
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
@@ -1116,7 +1104,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 minLines: 1,
                                                 cursorColor:
@@ -1223,7 +1210,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                     hintText: '   Auditor...',
                                                     icon: Icon(
@@ -1261,8 +1247,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                                   'Nissan Brand',
                                                               letterSpacing:
                                                                   0.0,
-                                                              useGoogleFonts:
-                                                                  false,
                                                             ),
                                                   ),
                                                 );
@@ -1373,8 +1357,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                                     'Nissan Brand',
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts:
-                                                                    false,
                                                               ),
                                                       hintText: '   ASPM...',
                                                       icon: Icon(
@@ -1415,8 +1397,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                                     'Nissan Brand',
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts:
-                                                                    false,
                                                               ),
                                                     ),
                                                   );
@@ -1645,7 +1625,6 @@ class _AuthCreateUserWidgetState extends State<AuthCreateUserWidget>
                                                               'Nissan Brand',
                                                           color: Colors.white,
                                                           letterSpacing: 2.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 elevation: 3.0,
                                                 borderSide: BorderSide(

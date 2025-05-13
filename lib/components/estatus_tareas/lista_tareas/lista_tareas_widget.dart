@@ -63,7 +63,6 @@ class _ListaTareasWidgetState extends State<ListaTareasWidget> {
                           fontSize: 18.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.normal,
-                          useGoogleFonts: false,
                         ),
                   ),
                   InkWell(
@@ -128,7 +127,6 @@ class _ListaTareasWidgetState extends State<ListaTareasWidget> {
                                 .override(
                                   fontFamily: 'Nissan Brand',
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: false,
                                 ),
                           ),
                         ),
@@ -138,7 +136,6 @@ class _ListaTareasWidgetState extends State<ListaTareasWidget> {
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Nissan Brand',
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: false,
                                   ),
                         ),
                       ],

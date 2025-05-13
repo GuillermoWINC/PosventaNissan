@@ -94,7 +94,6 @@ class _UserManagementWidgetState extends State<UserManagementWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -164,7 +163,6 @@ class _UserManagementWidgetState extends State<UserManagementWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -178,7 +176,6 @@ class _UserManagementWidgetState extends State<UserManagementWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -218,7 +215,6 @@ class _UserManagementWidgetState extends State<UserManagementWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                           iconColor:
                                               FlutterFlowTheme.of(context)
@@ -245,7 +241,6 @@ class _UserManagementWidgetState extends State<UserManagementWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryText,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                           iconColor:
                                               FlutterFlowTheme.of(context)

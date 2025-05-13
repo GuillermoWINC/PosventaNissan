@@ -150,7 +150,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -193,7 +192,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           .override(
                                             fontFamily: 'Nissan Brand',
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -231,7 +229,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               .override(
                                                 fontFamily: 'Nissan Brand',
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ],
@@ -253,7 +250,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                     ),
@@ -318,7 +314,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ],
@@ -388,7 +383,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   Text(
@@ -400,7 +394,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ],
@@ -455,7 +448,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   Text(
@@ -467,7 +459,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ],
@@ -522,7 +513,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   Text(
@@ -534,7 +524,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ],
@@ -589,7 +578,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   Text(
@@ -601,7 +589,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ],
@@ -656,7 +643,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   Text(
@@ -668,7 +654,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ],
@@ -723,7 +708,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   Text(
@@ -735,7 +719,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ],
@@ -790,7 +773,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   Text(
@@ -802,7 +784,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ],
@@ -861,7 +842,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   Text(
@@ -873,7 +853,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ],
@@ -970,8 +949,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                       ),
                                                       Text(
@@ -985,8 +962,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                       ),
                                                     ],
@@ -1038,7 +1013,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                               Text(
@@ -1050,7 +1024,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ],
@@ -1099,7 +1072,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                               Text(
@@ -1111,7 +1083,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ],
@@ -1165,7 +1136,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   Text(
@@ -1177,7 +1147,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ],
@@ -1232,7 +1201,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ],

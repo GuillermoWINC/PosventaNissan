@@ -118,7 +118,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                       color: Colors.white,
                       fontSize: 22.0,
                       letterSpacing: 0.0,
-                      useGoogleFonts: false,
                     ),
               ),
               actions: [],
@@ -192,7 +191,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                 .override(
                                   fontFamily: 'Nissan Brand',
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: false,
                                 ),
                           ),
                           Padding(
@@ -205,7 +203,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                   .override(
                                     fontFamily: 'Nissan Brand',
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: false,
                                   ),
                             ),
                           ),
@@ -248,7 +245,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                         ),
@@ -298,8 +294,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                       ),
                                                     ),
@@ -360,8 +354,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                         14.0,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts:
-                                                                        false,
                                                                   ),
                                                           elevation: 3.0,
                                                           borderSide:
@@ -414,8 +406,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                       ),
                                                     ),
@@ -476,8 +466,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                         14.0,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts:
-                                                                        false,
                                                                   ),
                                                           elevation: 3.0,
                                                           borderSide:
@@ -532,8 +520,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                       ),
                                                     ),
@@ -594,8 +580,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                         14.0,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts:
-                                                                        false,
                                                                   ),
                                                           elevation: 3.0,
                                                           borderSide:
@@ -643,8 +627,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                       ),
                                                     ),
@@ -705,8 +687,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                         14.0,
                                                                     letterSpacing:
                                                                         0.0,
-                                                                    useGoogleFonts:
-                                                                        false,
                                                                   ),
                                                           elevation: 3.0,
                                                           borderSide:
@@ -756,8 +736,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                       ),
                                                     ),
@@ -783,8 +761,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                           ),
                                                         ),
@@ -812,8 +788,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                           ),
                                                         ),
@@ -841,8 +815,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                           ),
                                                         ),
@@ -870,8 +842,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                           ),
                                                         ),
@@ -899,8 +869,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                           ),
                                                         ),
@@ -928,8 +896,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                           ),
                                                         ),
@@ -966,8 +932,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                       ),
                                                     ),
@@ -1069,7 +1033,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                             fontFamily: 'Nissan Brand',
                                             color: Colors.white,
                                             letterSpacing: 2.0,
-                                            useGoogleFonts: false,
                                           ),
                                       elevation: 3.0,
                                       borderSide: BorderSide(
@@ -1159,7 +1122,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                             context)
                                                         .primaryBackground,
                                                     letterSpacing: 0.0,
-                                                    useGoogleFonts: false,
                                                   ),
                                               textAlign: TextAlign.center,
                                             ),
@@ -1196,7 +1158,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                             fontFamily: 'Nissan Brand',
                                             color: Colors.white,
                                             letterSpacing: 2.0,
-                                            useGoogleFonts: false,
                                           ),
                                       elevation: 3.0,
                                       borderSide: BorderSide(
@@ -1259,7 +1220,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                           .override(
                                             fontFamily: 'Nissan Brand',
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -1326,7 +1286,6 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                                                     color: Colors.white,
                                                     fontSize: 12.0,
                                                     letterSpacing: 2.0,
-                                                    useGoogleFonts: false,
                                                   ),
                                           elevation: 3.0,
                                           borderSide: BorderSide(

@@ -193,7 +193,6 @@ class _TaskWidgetState extends State<TaskWidget> {
                                   .override(
                                     fontFamily: 'Nissan Brand',
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: false,
                                   ),
                             ),
                           ),
@@ -267,7 +266,6 @@ class _TaskWidgetState extends State<TaskWidget> {
                                           color: Colors.white,
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                     elevation: 3.0,
                                     borderSide: BorderSide(

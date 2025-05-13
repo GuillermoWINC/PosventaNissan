@@ -88,7 +88,6 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -157,7 +156,6 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -187,7 +185,6 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                   fontFamily: 'Nissan Brand',
                                                   fontSize: 20.0,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                           FFButtonWidget(
@@ -295,7 +292,6 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                         color: Colors.white,
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               elevation: 0.0,
                                               borderRadius:
@@ -320,7 +316,6 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                   fontFamily: 'Nissan Brand',
                                                   fontSize: 20.0,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                           Expanded(
@@ -346,7 +341,6 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                     hintText: 'TextField',
                                                     hintStyle: FlutterFlowTheme
@@ -356,7 +350,6 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
@@ -419,7 +412,6 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                                   cursorColor:
                                                       FlutterFlowTheme.of(
@@ -476,7 +468,6 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                         color: Colors.white,
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               elevation: 0.0,
                                               borderRadius:
@@ -501,7 +492,6 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                       fontFamily: 'Nissan Brand',
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),

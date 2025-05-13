@@ -96,7 +96,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                   color: Colors.white,
                   fontSize: 22.0,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -158,7 +157,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -176,14 +174,12 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
@@ -223,7 +219,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                                 validator: _model
                                     .taskNameTextControllerValidator
@@ -240,7 +235,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -259,7 +253,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                   alignLabelWithHint: true,
                                   hintStyle: FlutterFlowTheme.of(context)
@@ -267,7 +260,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
@@ -307,7 +299,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                                 maxLines: 20,
                                 validator: _model
@@ -325,7 +316,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -355,7 +345,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                                 icon: Icon(
                                   Icons.keyboard_arrow_down_rounded,
@@ -387,7 +376,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -415,7 +403,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                                 hintText:
                                     'Selecciona las opciones que aplican...',
@@ -473,7 +460,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                         color: FlutterFlowTheme.of(context)
                                             .alternate,
                                         letterSpacing: 2.0,
-                                        useGoogleFonts: false,
                                       ),
                                   elevation: 3.0,
                                   borderSide: BorderSide(
@@ -559,7 +545,6 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
                                         fontFamily: 'Nissan Brand',
                                         color: Colors.white,
                                         letterSpacing: 2.0,
-                                        useGoogleFonts: false,
                                       ),
                                   elevation: 3.0,
                                   borderSide: BorderSide(

@@ -123,7 +123,6 @@ class _IconoEstatusConcesWidgetState extends State<IconoEstatusConcesWidget> {
                             fontFamily: 'Nissan Brand',
                             fontSize: 14.0,
                             letterSpacing: 0.0,
-                            useGoogleFonts: false,
                           ),
                     ),
                   ),

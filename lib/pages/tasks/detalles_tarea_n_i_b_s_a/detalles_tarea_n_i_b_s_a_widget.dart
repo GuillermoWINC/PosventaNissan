@@ -89,7 +89,6 @@ class _DetallesTareaNIBSAWidgetState extends State<DetallesTareaNIBSAWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -159,7 +158,6 @@ class _DetallesTareaNIBSAWidgetState extends State<DetallesTareaNIBSAWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -187,7 +185,6 @@ class _DetallesTareaNIBSAWidgetState extends State<DetallesTareaNIBSAWidget> {
                                               fontSize: 20.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.normal,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                       Row(
@@ -240,7 +237,6 @@ class _DetallesTareaNIBSAWidgetState extends State<DetallesTareaNIBSAWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -263,7 +259,6 @@ class _DetallesTareaNIBSAWidgetState extends State<DetallesTareaNIBSAWidget> {
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w300,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -359,7 +354,6 @@ class _DetallesTareaNIBSAWidgetState extends State<DetallesTareaNIBSAWidget> {
                                                           'Nissan Brand',
                                                       color: Colors.white,
                                                       letterSpacing: 0.0,
-                                                      useGoogleFonts: false,
                                                     ),
                                             elevation: 0.0,
                                             borderRadius:
@@ -410,7 +404,6 @@ class _DetallesTareaNIBSAWidgetState extends State<DetallesTareaNIBSAWidget> {
                                                             'Nissan Brand',
                                                         color: Colors.white,
                                                         letterSpacing: 2.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               elevation: 3.0,
                                               borderSide: BorderSide(

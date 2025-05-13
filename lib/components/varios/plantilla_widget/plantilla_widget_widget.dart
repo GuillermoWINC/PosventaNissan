@@ -158,7 +158,6 @@ class _PlantillaWidgetWidgetState extends State<PlantillaWidgetWidget>
                                           .override(
                                             fontFamily: 'Nissan Brand',
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -193,7 +192,6 @@ class _PlantillaWidgetWidgetState extends State<PlantillaWidgetWidget>
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                 ),
                               ),
@@ -270,7 +268,6 @@ class _PlantillaWidgetWidgetState extends State<PlantillaWidgetWidget>
                                                                 .of(context)
                                                             .primaryBackground,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                                   textAlign: TextAlign.center,
                                                 ),
@@ -302,7 +299,6 @@ class _PlantillaWidgetWidgetState extends State<PlantillaWidgetWidget>
                                                           'Nissan Brand',
                                                       color: Colors.white,
                                                       letterSpacing: 2.0,
-                                                      useGoogleFonts: false,
                                                     ),
                                             elevation: 3.0,
                                             borderSide: BorderSide(

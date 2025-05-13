@@ -162,7 +162,6 @@ class _MotivoRechazoWidgetState extends State<MotivoRechazoWidget>
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ),
@@ -197,7 +196,6 @@ class _MotivoRechazoWidgetState extends State<MotivoRechazoWidget>
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -227,7 +225,6 @@ class _MotivoRechazoWidgetState extends State<MotivoRechazoWidget>
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                     alignLabelWithHint: true,
                                     hintStyle: FlutterFlowTheme.of(context)
@@ -235,7 +232,6 @@ class _MotivoRechazoWidgetState extends State<MotivoRechazoWidget>
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -277,7 +273,6 @@ class _MotivoRechazoWidgetState extends State<MotivoRechazoWidget>
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                   maxLines: 5,
                                   validator: _model.textControllerValidator
@@ -303,7 +298,6 @@ class _MotivoRechazoWidgetState extends State<MotivoRechazoWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                         ),
@@ -373,7 +367,6 @@ class _MotivoRechazoWidgetState extends State<MotivoRechazoWidget>
                                                                   .of(context)
                                                               .primaryBackground,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 textAlign: TextAlign.center,
                                               ),
@@ -404,7 +397,6 @@ class _MotivoRechazoWidgetState extends State<MotivoRechazoWidget>
                                                     fontFamily: 'Nissan Brand',
                                                     color: Colors.white,
                                                     letterSpacing: 2.0,
-                                                    useGoogleFonts: false,
                                                   ),
                                           elevation: 3.0,
                                           borderSide: BorderSide(

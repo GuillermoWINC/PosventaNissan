@@ -98,7 +98,6 @@ class _ConcesionariosWidgetState extends State<ConcesionariosWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -168,7 +167,6 @@ class _ConcesionariosWidgetState extends State<ConcesionariosWidget> {
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                 ),
                               ),

@@ -161,7 +161,6 @@ class _CambioNivelWidgetState extends State<CambioNivelWidget>
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ),
@@ -199,7 +198,6 @@ class _CambioNivelWidgetState extends State<CambioNivelWidget>
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -228,7 +226,6 @@ class _CambioNivelWidgetState extends State<CambioNivelWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                         ),
@@ -274,7 +271,6 @@ class _CambioNivelWidgetState extends State<CambioNivelWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                         ),
@@ -303,7 +299,6 @@ class _CambioNivelWidgetState extends State<CambioNivelWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                         ),
@@ -358,7 +353,6 @@ class _CambioNivelWidgetState extends State<CambioNivelWidget>
                                                       fontFamily:
                                                           'Nissan Brand',
                                                       letterSpacing: 0.0,
-                                                      useGoogleFonts: false,
                                                     ),
                                             icon: Icon(
                                               Icons.keyboard_arrow_down_rounded,
@@ -423,7 +417,6 @@ class _CambioNivelWidgetState extends State<CambioNivelWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                         ),
@@ -475,7 +468,6 @@ class _CambioNivelWidgetState extends State<CambioNivelWidget>
                                                     fontFamily: 'Nissan Brand',
                                                     color: Colors.white,
                                                     letterSpacing: 2.0,
-                                                    useGoogleFonts: false,
                                                   ),
                                           elevation: 3.0,
                                           borderSide: BorderSide(

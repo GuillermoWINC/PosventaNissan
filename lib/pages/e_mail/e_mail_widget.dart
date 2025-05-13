@@ -129,7 +129,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                       fontFamily: 'Nissan Brand',
                       color: FlutterFlowTheme.of(context).primaryBackground,
                       letterSpacing: 0.0,
-                      useGoogleFonts: false,
                     ),
               ),
               actions: [],
@@ -199,7 +198,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ),
@@ -214,7 +212,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                           fontFamily: 'Nissan Brand',
                                           fontSize: 16.0,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ),
@@ -241,7 +238,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                   fontFamily: 'Nissan Brand',
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                         ),
@@ -264,7 +260,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
@@ -273,7 +268,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -322,7 +316,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             cursorColor:
                                                 FlutterFlowTheme.of(context)
@@ -344,7 +337,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                   fontFamily: 'Nissan Brand',
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                         ),
@@ -367,7 +359,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
@@ -376,7 +367,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -425,7 +415,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             maxLines: 6,
                                             cursorColor:
@@ -448,7 +437,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                   fontFamily: 'Nissan Brand',
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                           ),
                                         ),
@@ -471,7 +459,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
@@ -480,7 +467,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -529,7 +515,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             cursorColor:
                                                 FlutterFlowTheme.of(context)
@@ -645,7 +630,115 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                               'Nissan Brand',
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
+                                                        ),
+                                                    elevation: 0.0,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8.0),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            Opacity(
+                                              opacity: 0.0,
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        5.0, 20.0, 0.0, 0.0),
+                                                child: FFButtonWidget(
+                                                  onPressed: () async {
+                                                    FFAppState()
+                                                            .emailsConcesionarios =
+                                                        eMailUsersRecordList
+                                                            .map((e) => e.email)
+                                                            .toList()
+                                                            .cast<String>();
+                                                    safeSetState(() {});
+                                                    _model.apiResultEmailPrueba =
+                                                        await EmailResendCall
+                                                            .call(
+                                                      toEmailList: FFAppState()
+                                                          .emailTest,
+                                                      subject: _model
+                                                          .asuntoTextController
+                                                          .text,
+                                                      htmlContent:
+                                                          'Estimados Concesionarios y Talleres Autorizados,<br><br>${_model.cuerpoTextController.text}<br><br>Saludos cordiales,<br><br>${_model.firmaTextController.text}',
+                                                    );
+
+                                                    if ((_model
+                                                            .apiResultEmailPrueba
+                                                            ?.succeeded ??
+                                                        true)) {
+                                                      await showDialog(
+                                                        context: context,
+                                                        builder:
+                                                            (alertDialogContext) {
+                                                          return AlertDialog(
+                                                            title: Text(
+                                                                'Email enviado'),
+                                                            content: Text(
+                                                                'Se ha enviado el email correctamente'),
+                                                            actions: [
+                                                              TextButton(
+                                                                onPressed: () =>
+                                                                    Navigator.pop(
+                                                                        alertDialogContext),
+                                                                child:
+                                                                    Text('Ok'),
+                                                              ),
+                                                            ],
+                                                          );
+                                                        },
+                                                      );
+                                                    } else {
+                                                      await showDialog(
+                                                        context: context,
+                                                        builder:
+                                                            (alertDialogContext) {
+                                                          return AlertDialog(
+                                                            title: Text(
+                                                                'Error al enviar el email'),
+                                                            content: Text(
+                                                                'No se ha podido enviar el email'),
+                                                            actions: [
+                                                              TextButton(
+                                                                onPressed: () =>
+                                                                    Navigator.pop(
+                                                                        alertDialogContext),
+                                                                child:
+                                                                    Text('Ok'),
+                                                              ),
+                                                            ],
+                                                          );
+                                                        },
+                                                      );
+                                                    }
+
+                                                    safeSetState(() {});
+                                                  },
+                                                  text: 'Email  prueba',
+                                                  options: FFButtonOptions(
+                                                    height: 40.0,
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(30.0, 0.0,
+                                                                30.0, 0.0),
+                                                    iconPadding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 0.0,
+                                                                0.0, 0.0),
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primary,
+                                                    textStyle: FlutterFlowTheme
+                                                            .of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Nissan Brand',
+                                                          color: Colors.white,
+                                                          letterSpacing: 0.0,
                                                         ),
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -822,8 +915,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                                     .white,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts:
-                                                                    false,
                                                               ),
                                                       elevation: 0.0,
                                                       borderRadius:
@@ -960,7 +1051,7 @@ class _EMailWidgetState extends State<EMailWidget> {
 
                                                       safeSetState(() {});
                                                     },
-                                                    text: 'Email  Lotes Test',
+                                                    text: 'Email  Test',
                                                     options: FFButtonOptions(
                                                       height: 40.0,
                                                       padding:
@@ -992,135 +1083,6 @@ class _EMailWidgetState extends State<EMailWidget> {
                                                                     .white,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts:
-                                                                    false,
-                                                              ),
-                                                      elevation: 0.0,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              8.0),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            if (valueOrDefault(
-                                                    currentUserDocument?.role,
-                                                    '') ==
-                                                'NIBSA')
-                                              Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        5.0, 20.0, 0.0, 0.0),
-                                                child: AuthUserStreamWidget(
-                                                  builder: (context) =>
-                                                      FFButtonWidget(
-                                                    onPressed: () async {
-                                                      FFAppState()
-                                                              .emailsConcesionarios =
-                                                          eMailUsersRecordList
-                                                              .map((e) =>
-                                                                  e.email)
-                                                              .toList()
-                                                              .cast<String>();
-                                                      safeSetState(() {});
-                                                      _model.apiResultEmailPrueba =
-                                                          await EmailResendCall
-                                                              .call(
-                                                        toEmailList:
-                                                            FFAppState()
-                                                                .emailTest,
-                                                        subject: _model
-                                                            .asuntoTextController
-                                                            .text,
-                                                        htmlContent:
-                                                            'Estimados Concesionarios y Talleres Autorizados,<br><br>${_model.cuerpoTextController.text}<br><br>Saludos cordiales,<br><br>${_model.firmaTextController.text}',
-                                                      );
-
-                                                      if ((_model
-                                                              .apiResultEmailPrueba
-                                                              ?.succeeded ??
-                                                          true)) {
-                                                        await showDialog(
-                                                          context: context,
-                                                          builder:
-                                                              (alertDialogContext) {
-                                                            return AlertDialog(
-                                                              title: Text(
-                                                                  'Email enviado'),
-                                                              content: Text(
-                                                                  'Se ha enviado el email correctamente'),
-                                                              actions: [
-                                                                TextButton(
-                                                                  onPressed: () =>
-                                                                      Navigator.pop(
-                                                                          alertDialogContext),
-                                                                  child: Text(
-                                                                      'Ok'),
-                                                                ),
-                                                              ],
-                                                            );
-                                                          },
-                                                        );
-                                                      } else {
-                                                        await showDialog(
-                                                          context: context,
-                                                          builder:
-                                                              (alertDialogContext) {
-                                                            return AlertDialog(
-                                                              title: Text(
-                                                                  'Error al enviar el email'),
-                                                              content: Text(
-                                                                  'No se ha podido enviar el email'),
-                                                              actions: [
-                                                                TextButton(
-                                                                  onPressed: () =>
-                                                                      Navigator.pop(
-                                                                          alertDialogContext),
-                                                                  child: Text(
-                                                                      'Ok'),
-                                                                ),
-                                                              ],
-                                                            );
-                                                          },
-                                                        );
-                                                      }
-
-                                                      safeSetState(() {});
-                                                    },
-                                                    text: 'Email  prueba',
-                                                    options: FFButtonOptions(
-                                                      height: 40.0,
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  30.0,
-                                                                  0.0,
-                                                                  30.0,
-                                                                  0.0),
-                                                      iconPadding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      textStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleSmall
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Nissan Brand',
-                                                                color: Colors
-                                                                    .white,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                                useGoogleFonts:
-                                                                    false,
                                                               ),
                                                       elevation: 0.0,
                                                       borderRadius:

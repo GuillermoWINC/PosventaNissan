@@ -164,7 +164,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                     fontSize: 24.0,
                                     letterSpacing: 3.0,
                                     fontWeight: FontWeight.w300,
-                                    useGoogleFonts: false,
                                   ),
                             ),
                           ),
@@ -253,7 +252,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                       Padding(
@@ -266,7 +264,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                               .override(
                                                 fontFamily: 'Nissan Brand',
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -294,7 +291,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -347,7 +343,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             keyboardType:
                                                 TextInputType.emailAddress,
@@ -384,7 +379,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -458,7 +452,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             cursorColor:
                                                 FlutterFlowTheme.of(context)
@@ -520,7 +513,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                                             'Nissan Brand',
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               elevation: 3.0,
                                               borderSide: BorderSide(
@@ -583,7 +575,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
-                                                        useGoogleFonts: false,
                                                       ),
                                                 )
                                               ],
@@ -594,7 +585,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -655,7 +645,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   )
                                                 ],
@@ -666,7 +655,6 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),

@@ -106,7 +106,6 @@ class _ProfileAuthenticatedWidgetState
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -179,7 +178,6 @@ class _ProfileAuthenticatedWidgetState
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                 ),
                               ),
@@ -204,7 +202,6 @@ class _ProfileAuthenticatedWidgetState
                                                 .accent1,
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -283,7 +280,6 @@ class _ProfileAuthenticatedWidgetState
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -313,7 +309,6 @@ class _ProfileAuthenticatedWidgetState
                                                 .accent1,
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -337,7 +332,6 @@ class _ProfileAuthenticatedWidgetState
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -388,7 +382,6 @@ class _ProfileAuthenticatedWidgetState
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             validator: _model
                                                 .companyTextControllerValidator
@@ -417,7 +410,6 @@ class _ProfileAuthenticatedWidgetState
                                                 .accent1,
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -440,7 +432,6 @@ class _ProfileAuthenticatedWidgetState
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -491,7 +482,6 @@ class _ProfileAuthenticatedWidgetState
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             validator: _model
                                                 .nameTextControllerValidator
@@ -550,7 +540,6 @@ class _ProfileAuthenticatedWidgetState
                                                           context)
                                                       .primaryBackground,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             elevation: 3.0,
                                             borderSide: BorderSide(
@@ -583,7 +572,6 @@ class _ProfileAuthenticatedWidgetState
                                                 .accent1,
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -605,7 +593,6 @@ class _ProfileAuthenticatedWidgetState
                                                       fontFamily:
                                                           'Nissan Brand',
                                                       letterSpacing: 0.0,
-                                                      useGoogleFonts: false,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
@@ -656,7 +643,6 @@ class _ProfileAuthenticatedWidgetState
                                               .override(
                                                 fontFamily: 'Nissan Brand',
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                           keyboardType:
                                               TextInputType.emailAddress,
@@ -740,7 +726,6 @@ class _ProfileAuthenticatedWidgetState
                                                           context)
                                                       .primaryBackground,
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             elevation: 3.0,
                                             borderSide: BorderSide(
@@ -805,7 +790,6 @@ class _ProfileAuthenticatedWidgetState
                                                         .accent1,
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
-                                                    useGoogleFonts: false,
                                                   ),
                                             ),
                                           ),
@@ -833,7 +817,6 @@ class _ProfileAuthenticatedWidgetState
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
@@ -898,7 +881,6 @@ class _ProfileAuthenticatedWidgetState
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                                   validator: _model
                                                       .auditorTextControllerValidator
@@ -961,7 +943,6 @@ class _ProfileAuthenticatedWidgetState
                                                         .accent1,
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
-                                                    useGoogleFonts: false,
                                                   ),
                                             ),
                                           ),
@@ -989,7 +970,6 @@ class _ProfileAuthenticatedWidgetState
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
@@ -1054,7 +1034,6 @@ class _ProfileAuthenticatedWidgetState
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                                   validator: _model
                                                       .aspmTextControllerValidator
@@ -1096,7 +1075,6 @@ class _ProfileAuthenticatedWidgetState
                                           fontFamily: 'Nissan Brand',
                                           color: Colors.white,
                                           letterSpacing: 2.0,
-                                          useGoogleFonts: false,
                                         ),
                                     elevation: 3.0,
                                     borderSide: BorderSide(

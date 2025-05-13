@@ -95,7 +95,6 @@ class _TasksAllWidgetState extends State<TasksAllWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -165,7 +164,6 @@ class _TasksAllWidgetState extends State<TasksAllWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -179,7 +177,6 @@ class _TasksAllWidgetState extends State<TasksAllWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -205,7 +202,6 @@ class _TasksAllWidgetState extends State<TasksAllWidget> {
                                             .primaryBackground,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.normal,
-                                        useGoogleFonts: false,
                                       ),
                                   iconColor: FlutterFlowTheme.of(context)
                                       .primaryBackground,
@@ -225,7 +221,6 @@ class _TasksAllWidgetState extends State<TasksAllWidget> {
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryText,
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                   iconColor: FlutterFlowTheme.of(context)
                                       .secondaryText,

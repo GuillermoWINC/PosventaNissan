@@ -87,7 +87,6 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -186,7 +185,6 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
                                               .override(
                                                 fontFamily: 'Nissan Brand',
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -245,7 +243,6 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
                                                       fontFamily:
                                                           'Nissan Brand',
                                                       letterSpacing: 0.0,
-                                                      useGoogleFonts: false,
                                                     ),
                                             hintText: 'Resetea un estándar',
                                             icon: Icon(
@@ -457,7 +454,6 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                         hintText: 'Selecciona ASPM',
                                         icon: Icon(
@@ -516,7 +512,6 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                         hintText: 'Selecciona Grupo',
                                         icon: Icon(
@@ -578,7 +573,6 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                         hintText: 'Selecciona Nivel',
                                         icon: Icon(

@@ -85,7 +85,6 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
                                     fontSize: 32.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
-                                    useGoogleFonts: false,
                                   ),
                               pickerBackgroundColor:
                                   FlutterFlowTheme.of(context)
@@ -148,7 +147,6 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w300,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                               Text(
@@ -165,7 +163,6 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ]
@@ -203,7 +200,6 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
                                     fontSize: 32.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
-                                    useGoogleFonts: false,
                                   ),
                               pickerBackgroundColor:
                                   FlutterFlowTheme.of(context)
@@ -265,7 +261,6 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w300,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                               Text(
@@ -282,7 +277,6 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ].divide(SizedBox(width: 8.0)),

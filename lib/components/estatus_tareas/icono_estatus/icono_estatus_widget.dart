@@ -82,7 +82,6 @@ class _IconoEstatusWidgetState extends State<IconoEstatusWidget> {
               style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: 'Nissan Brand',
                     letterSpacing: 0.0,
-                    useGoogleFonts: false,
                   ),
             ),
           ),

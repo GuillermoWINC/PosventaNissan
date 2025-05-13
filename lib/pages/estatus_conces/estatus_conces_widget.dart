@@ -124,7 +124,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                       fontFamily: 'Nissan Brand',
                       color: FlutterFlowTheme.of(context).primaryBackground,
                       letterSpacing: 0.0,
-                      useGoogleFonts: false,
                     ),
               ),
               actions: [],
@@ -207,7 +206,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -241,7 +239,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                           color: Colors.white,
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 elevation: 3.0,
                                                 borderSide: BorderSide(
@@ -305,7 +302,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -344,7 +340,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                               'Nissan Brand',
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -372,7 +367,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                               'Nissan Brand',
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -403,7 +397,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                               'Nissan Brand',
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -434,7 +427,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                               'Nissan Brand',
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -504,8 +496,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .normal,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                       ),
                                                     ),
@@ -668,8 +658,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .normal,
-                                                                useGoogleFonts:
-                                                                    false,
                                                               ),
                                                         ),
                                                       ),
@@ -700,8 +688,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .normal,
-                                                                useGoogleFonts:
-                                                                    false,
                                                               ),
                                                         ),
                                                       ),
@@ -872,8 +858,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .normal,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                           ),
                                                         ),
@@ -909,8 +893,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .normal,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                           ),
                                                         ),
@@ -1073,8 +1055,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .normal,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                           ),
                                                         ),
@@ -1106,8 +1086,6 @@ class _EstatusConcesWidgetState extends State<EstatusConcesWidget> {
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .normal,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                           ),
                                                         ),

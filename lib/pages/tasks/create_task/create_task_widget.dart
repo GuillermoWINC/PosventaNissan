@@ -89,7 +89,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                   color: Colors.white,
                   fontSize: 22.0,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -151,7 +150,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -170,14 +168,12 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
@@ -217,7 +213,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                                 validator: _model
                                     .taskNameTextControllerValidator
@@ -234,7 +229,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -254,7 +248,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                   alignLabelWithHint: true,
                                   hintStyle: FlutterFlowTheme.of(context)
@@ -262,7 +255,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
@@ -302,7 +294,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                                 maxLines: 4,
                                 validator: _model
@@ -320,7 +311,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -347,7 +337,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                                 hintText: 'Please select...',
                                 icon: Icon(
@@ -380,7 +369,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -403,7 +391,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                                 hintText:
                                     'Selecciona las opciones que aplican...',
@@ -529,7 +516,6 @@ class _CreateTaskWidgetState extends State<CreateTaskWidget> {
                                         fontFamily: 'Nissan Brand',
                                         color: Colors.white,
                                         letterSpacing: 2.0,
-                                        useGoogleFonts: false,
                                       ),
                                   elevation: 3.0,
                                   borderSide: BorderSide(

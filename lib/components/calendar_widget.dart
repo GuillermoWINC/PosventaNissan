@@ -71,7 +71,6 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                           FlutterFlowTheme.of(context).headlineSmall.override(
                                 fontFamily: 'Nissan Brand',
                                 letterSpacing: 0.0,
-                                useGoogleFonts: false,
                               ),
                     ),
                     FlutterFlowIconButton(
@@ -104,7 +103,6 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Nissan Brand',
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: false,
                                   ),
                         ),
                         Text(
@@ -114,7 +112,6 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                     fontFamily: 'Nissan Brand',
                                     color: FlutterFlowTheme.of(context).primary,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: false,
                                   ),
                         ),
                       ],
@@ -136,7 +133,6 @@ class _CalendarWidgetState extends State<CalendarWidget> {
                                   fontFamily: 'Nissan Brand',
                                   color: FlutterFlowTheme.of(context).info,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: false,
                                 ),
                         elevation: 0.0,
                         borderSide: BorderSide(

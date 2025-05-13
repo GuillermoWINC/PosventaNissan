@@ -137,7 +137,6 @@ class _ConcesionarioWidgetState extends State<ConcesionarioWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -187,7 +186,6 @@ class _ConcesionarioWidgetState extends State<ConcesionarioWidget> {
                                           fontFamily: 'Nissan Brand',
                                           fontSize: 10.0,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                   Text(
@@ -197,7 +195,6 @@ class _ConcesionarioWidgetState extends State<ConcesionarioWidget> {
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ],
@@ -249,7 +246,6 @@ class _ConcesionarioWidgetState extends State<ConcesionarioWidget> {
                                           fontFamily: 'Nissan Brand',
                                           fontSize: 10.0,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                   Text(
@@ -259,7 +255,6 @@ class _ConcesionarioWidgetState extends State<ConcesionarioWidget> {
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ],

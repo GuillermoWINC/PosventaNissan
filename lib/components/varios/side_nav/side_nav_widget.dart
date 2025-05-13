@@ -113,7 +113,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                       style: FlutterFlowTheme.of(context).labelMedium.override(
                             fontFamily: 'Nissan Brand',
                             letterSpacing: 0.0,
-                            useGoogleFonts: false,
                           ),
                     ),
                   ),
@@ -155,7 +154,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                           color: FlutterFlowTheme.of(context)
                                               .alternate,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ),
@@ -225,7 +223,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                     ),
@@ -252,7 +249,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -314,7 +310,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                           .override(
                                             fontFamily: 'Nissan Brand',
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -364,7 +359,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                           color: FlutterFlowTheme.of(context)
                                               .alternate,
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ),
@@ -422,7 +416,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                           .override(
                                             fontFamily: 'Nissan Brand',
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -441,7 +434,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                       style: FlutterFlowTheme.of(context).labelMedium.override(
                             fontFamily: 'Nissan Brand',
                             letterSpacing: 0.0,
-                            useGoogleFonts: false,
                           ),
                     ),
                   ),
@@ -479,7 +471,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -522,7 +513,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -576,7 +566,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                   fontFamily: 'Nissan Brand',
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
-                                  useGoogleFonts: false,
                                 ),
                           ),
                         ),
@@ -609,7 +598,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                           .override(
                                             fontFamily: 'Nissan Brand',
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -620,7 +608,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ],
@@ -684,7 +671,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                   TextSpan(
@@ -695,7 +681,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   )
                                 ],
@@ -704,7 +689,6 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),

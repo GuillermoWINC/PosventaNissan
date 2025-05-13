@@ -83,7 +83,6 @@ class _EstatusASPMyAuditWidgetState extends State<EstatusASPMyAuditWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -156,7 +155,6 @@ class _EstatusASPMyAuditWidgetState extends State<EstatusASPMyAuditWidget> {
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                   Row(

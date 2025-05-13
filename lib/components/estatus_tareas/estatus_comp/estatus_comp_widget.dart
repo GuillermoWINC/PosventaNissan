@@ -165,7 +165,6 @@ class _EstatusCompWidgetState extends State<EstatusCompWidget> {
                                               fontFamily: 'Nissan Brand',
                                               fontSize: 16.0,
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                     ),

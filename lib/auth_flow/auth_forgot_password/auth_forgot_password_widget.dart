@@ -162,7 +162,6 @@ class _AuthForgotPasswordWidgetState extends State<AuthForgotPasswordWidget>
                                     fontSize: 24.0,
                                     letterSpacing: 3.0,
                                     fontWeight: FontWeight.w300,
-                                    useGoogleFonts: false,
                                   ),
                             ),
                           ),
@@ -275,7 +274,6 @@ class _AuthForgotPasswordWidgetState extends State<AuthForgotPasswordWidget>
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                       Padding(
@@ -288,7 +286,6 @@ class _AuthForgotPasswordWidgetState extends State<AuthForgotPasswordWidget>
                                               .override(
                                                 fontFamily: 'Nissan Brand',
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -314,7 +311,6 @@ class _AuthForgotPasswordWidgetState extends State<AuthForgotPasswordWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -367,7 +363,6 @@ class _AuthForgotPasswordWidgetState extends State<AuthForgotPasswordWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             cursorColor:
                                                 FlutterFlowTheme.of(context)
@@ -424,7 +419,6 @@ class _AuthForgotPasswordWidgetState extends State<AuthForgotPasswordWidget>
                                                             'Nissan Brand',
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               elevation: 3.0,
                                               borderSide: BorderSide(

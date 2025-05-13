@@ -172,7 +172,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                     fontSize: 24.0,
                                     letterSpacing: 3.0,
                                     fontWeight: FontWeight.w300,
-                                    useGoogleFonts: false,
                                   ),
                             ),
                           ),
@@ -285,7 +284,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                       Padding(
@@ -298,7 +296,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                               .override(
                                                 fontFamily: 'Nissan Brand',
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -325,7 +322,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -378,7 +374,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             keyboardType:
                                                 TextInputType.emailAddress,
@@ -417,7 +412,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                   .override(
                                                     fontFamily: 'Nissan Brand',
                                                     letterSpacing: 0.0,
-                                                    useGoogleFonts: false,
                                                   ),
                                           hintText: 'Concesionario...',
                                           icon: Icon(
@@ -468,7 +462,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -521,7 +514,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             keyboardType:
                                                 TextInputType.emailAddress,
@@ -558,7 +550,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -632,7 +623,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             cursorColor:
                                                 FlutterFlowTheme.of(context)
@@ -668,7 +658,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -742,7 +731,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                 .override(
                                                   fontFamily: 'Nissan Brand',
                                                   letterSpacing: 0.0,
-                                                  useGoogleFonts: false,
                                                 ),
                                             minLines: 1,
                                             cursorColor:
@@ -784,7 +772,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                             'Nissan Brand',
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               elevation: 3.0,
                                               borderSide: BorderSide(
@@ -853,7 +840,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
-                                                        useGoogleFonts: false,
                                                       ),
                                                 )
                                               ],
@@ -864,7 +850,6 @@ class _AuthSolicitarWidgetState extends State<AuthSolicitarWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),

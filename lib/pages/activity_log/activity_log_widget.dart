@@ -85,7 +85,6 @@ class _ActivityLogWidgetState extends State<ActivityLogWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -155,7 +154,6 @@ class _ActivityLogWidgetState extends State<ActivityLogWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -252,7 +250,6 @@ class _ActivityLogWidgetState extends State<ActivityLogWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 hintText:
                                                     'Selecciona Concesionario...',

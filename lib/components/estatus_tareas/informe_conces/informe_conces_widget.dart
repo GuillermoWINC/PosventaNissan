@@ -180,7 +180,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                               .override(
                                                 fontFamily: 'Nissan Brand',
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -229,7 +228,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                     ),
@@ -283,7 +281,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -321,7 +318,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                             'Nissan Brand',
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -349,7 +345,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                             'Nissan Brand',
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -378,7 +373,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                             'Nissan Brand',
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -407,7 +401,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                             'Nissan Brand',
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -465,7 +458,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.normal,
-                                                        useGoogleFonts: false,
                                                       ),
                                                 ),
                                               ),
@@ -608,7 +600,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.normal,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -632,7 +623,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.normal,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -801,8 +791,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .normal,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                       ),
                                                     ),
@@ -839,8 +827,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .normal,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                       ),
                                                     ),
@@ -1004,8 +990,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                               fontWeight:
                                                                   FontWeight
                                                                       .normal,
-                                                              useGoogleFonts:
-                                                                  false,
                                                             ),
                                                       ),
                                                     ),
@@ -1036,8 +1020,6 @@ class _InformeConcesWidgetState extends State<InformeConcesWidget>
                                                               fontWeight:
                                                                   FontWeight
                                                                       .normal,
-                                                              useGoogleFonts:
-                                                                  false,
                                                             ),
                                                       ),
                                                     ),

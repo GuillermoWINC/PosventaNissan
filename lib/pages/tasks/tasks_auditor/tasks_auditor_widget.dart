@@ -97,7 +97,6 @@ class _TasksAuditorWidgetState extends State<TasksAuditorWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -192,7 +191,6 @@ class _TasksAuditorWidgetState extends State<TasksAuditorWidget> {
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ),
@@ -206,7 +204,6 @@ class _TasksAuditorWidgetState extends State<TasksAuditorWidget> {
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ),
@@ -238,7 +235,6 @@ class _TasksAuditorWidgetState extends State<TasksAuditorWidget> {
                                                 .primaryBackground,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.normal,
-                                            useGoogleFonts: false,
                                           ),
                                       iconColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
@@ -259,7 +255,6 @@ class _TasksAuditorWidgetState extends State<TasksAuditorWidget> {
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                       iconColor: FlutterFlowTheme.of(context)
                                           .secondaryText,

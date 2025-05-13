@@ -90,7 +90,6 @@ class _NotificationWidgetState extends State<NotificationWidget> {
                         style: FlutterFlowTheme.of(context).titleSmall.override(
                               fontFamily: 'Nissan Brand',
                               letterSpacing: 0.0,
-                              useGoogleFonts: false,
                             ),
                       ),
                     ].divide(SizedBox(width: 8.0)),
@@ -101,7 +100,6 @@ class _NotificationWidgetState extends State<NotificationWidget> {
                           fontFamily: 'Nissan Brand',
                           color: FlutterFlowTheme.of(context).primaryBackground,
                           letterSpacing: 0.0,
-                          useGoogleFonts: false,
                         ),
                   ),
                 ].divide(SizedBox(height: 4.0)),

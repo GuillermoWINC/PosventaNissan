@@ -128,7 +128,6 @@ class _TaskListWidgetState extends State<TaskListWidget> {
                       style: FlutterFlowTheme.of(context).labelLarge.override(
                             fontFamily: 'Nissan Brand',
                             letterSpacing: 0.0,
-                            useGoogleFonts: false,
                           ),
                     ),
                   ),

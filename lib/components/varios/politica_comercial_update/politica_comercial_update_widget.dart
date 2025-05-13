@@ -143,7 +143,6 @@ class _PoliticaComercialUpdateWidgetState
                                   .override(
                                     fontFamily: 'Nissan Brand',
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: false,
                                   ),
                             ),
                           ),
@@ -243,7 +242,6 @@ class _PoliticaComercialUpdateWidgetState
                                   color: Colors.white,
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: false,
                                 ),
                             elevation: 3.0,
                             borderSide: BorderSide(

@@ -191,7 +191,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                     ),
@@ -226,7 +225,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ),
@@ -284,8 +282,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                 fontSize: 20.0,
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts:
-                                                                    false,
                                                               ),
                                                     ),
                                                   ),
@@ -305,8 +301,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                             fontFamily:
                                                                 'Nissan Brand',
                                                             letterSpacing: 0.0,
-                                                            useGoogleFonts:
-                                                                false,
                                                           ),
                                                     ),
                                                   ),
@@ -366,8 +360,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.normal,
-                                                                        useGoogleFonts:
-                                                                            false,
                                                                       ),
                                                                 ),
                                                                 Padding(
@@ -394,8 +386,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                               12.0,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              false,
                                                                         ),
                                                                   ),
                                                                 ),
@@ -560,8 +550,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                                 14.0,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                false,
                                                                           ),
                                                                       elevation:
                                                                           3.0,
@@ -620,8 +608,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.normal,
-                                                                        useGoogleFonts:
-                                                                            false,
                                                                       ),
                                                                 ),
                                                                 Padding(
@@ -648,8 +634,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                               12.0,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              false,
                                                                         ),
                                                                   ),
                                                                 ),
@@ -814,8 +798,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                                 14.0,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                false,
                                                                           ),
                                                                       elevation:
                                                                           3.0,
@@ -874,8 +856,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.normal,
-                                                                        useGoogleFonts:
-                                                                            false,
                                                                       ),
                                                                 ),
                                                                 Padding(
@@ -902,8 +882,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                               12.0,
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              false,
                                                                         ),
                                                                   ),
                                                                 ),
@@ -1068,8 +1046,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                                 14.0,
                                                                             letterSpacing:
                                                                                 0.0,
-                                                                            useGoogleFonts:
-                                                                                false,
                                                                           ),
                                                                       elevation:
                                                                           3.0,
@@ -1133,7 +1109,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -1154,7 +1129,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
@@ -1163,7 +1137,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
@@ -1222,7 +1195,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               keyboardType: TextInputType.url,
                                               validator: _model
@@ -1262,7 +1234,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -1278,24 +1249,24 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                 obscureText: false,
                                                 decoration: InputDecoration(
                                                   labelText: 'Teléfono',
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                                  hintStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            letterSpacing: 0.0,
+                                                          ),
+                                                  hintStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
@@ -1358,7 +1329,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 keyboardType:
                                                     TextInputType.phone,
@@ -1379,24 +1349,24 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                 obscureText: false,
                                                 decoration: InputDecoration(
                                                   labelText: 'WhatsApp',
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                                  hintStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            letterSpacing: 0.0,
+                                                          ),
+                                                  hintStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
@@ -1459,7 +1429,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 keyboardType:
                                                     TextInputType.phone,
@@ -1483,7 +1452,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
@@ -1492,7 +1460,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
@@ -1551,7 +1518,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               keyboardType:
                                                   TextInputType.emailAddress,
@@ -1620,8 +1586,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                     'Nissan Brand',
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts:
-                                                                    false,
                                                               ),
                                                         ),
                                                         subtitle: Text(
@@ -1634,8 +1598,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                     'Nissan Brand',
                                                                 letterSpacing:
                                                                     0.0,
-                                                                useGoogleFonts:
-                                                                    false,
                                                               ),
                                                         ),
                                                         tileColor: FlutterFlowTheme
@@ -1814,7 +1776,6 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                             'Nissan Brand',
                                                         color: Colors.white,
                                                         letterSpacing: 2.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               elevation: 3.0,
                                               borderSide: BorderSide(

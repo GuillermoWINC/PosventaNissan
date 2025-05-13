@@ -82,7 +82,6 @@ class _CompanyWidgetState extends State<CompanyWidget> {
                   style: FlutterFlowTheme.of(context).labelLarge.override(
                         fontFamily: 'Nissan Brand',
                         letterSpacing: 0.0,
-                        useGoogleFonts: false,
                       ),
                 ),
               ),
@@ -121,7 +120,6 @@ class _CompanyWidgetState extends State<CompanyWidget> {
                                 .override(
                                   fontFamily: 'Nissan Brand',
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: false,
                                 ),
                           ),
                         ),

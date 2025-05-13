@@ -140,7 +140,6 @@ class _TaskAuditorConcesWidgetState extends State<TaskAuditorConcesWidget> {
                               FlutterFlowTheme.of(context).labelLarge.override(
                                     fontFamily: 'Nissan Brand',
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: false,
                                   ),
                         ),
                       ],
@@ -222,7 +221,6 @@ class _TaskAuditorConcesWidgetState extends State<TaskAuditorConcesWidget> {
                                     color: Colors.white,
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: false,
                                   ),
                               elevation: 3.0,
                               borderSide: BorderSide(

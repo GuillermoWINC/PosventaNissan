@@ -123,7 +123,6 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                       fontFamily: 'Nissan Brand',
                       color: FlutterFlowTheme.of(context).primaryBackground,
                       letterSpacing: 0.0,
-                      useGoogleFonts: false,
                     ),
               ),
               actions: [],
@@ -201,7 +200,6 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                     ),
@@ -255,7 +253,6 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -293,7 +290,6 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                                                             'Nissan Brand',
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -321,7 +317,6 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                                                             'Nissan Brand',
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -350,7 +345,6 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                                                             'Nissan Brand',
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -379,7 +373,6 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                                                             'Nissan Brand',
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                           ),
@@ -435,7 +428,6 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -559,7 +551,6 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -686,7 +677,6 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -810,7 +800,6 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),

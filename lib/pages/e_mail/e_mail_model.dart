@@ -37,11 +37,11 @@ class EMailModel extends FlutterFlowModel<EMailWidget> {
   // Stores action output result for [Backend Call - API (emailResend)] action in Button widget.
   ApiCallResponse? apiResultEmailMasivo;
   // Stores action output result for [Backend Call - API (emailResend)] action in Button widget.
+  ApiCallResponse? apiResultEmailPrueba;
+  // Stores action output result for [Backend Call - API (emailResend)] action in Button widget.
   ApiCallResponse? apiResultEmailUnoaUno;
   // Stores action output result for [Backend Call - API (emailResend)] action in Button widget.
   ApiCallResponse? apiResultEmailUnoaUnoTest;
-  // Stores action output result for [Backend Call - API (emailResend)] action in Button widget.
-  ApiCallResponse? apiResultEmailPrueba;
   // Model for sideNav component.
   late SideNavModel sideNavModel;
 

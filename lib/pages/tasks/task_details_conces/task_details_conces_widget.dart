@@ -99,7 +99,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                   color: Colors.white,
                   fontSize: 22.0,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -189,7 +188,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                     ),
@@ -228,7 +226,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                             .override(
                                               fontFamily: 'Nissan Brand',
                                               letterSpacing: 0.0,
-                                              useGoogleFonts: false,
                                             ),
                                       ),
                                     ],
@@ -247,7 +244,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ),
@@ -304,7 +300,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                             fontFamily: 'Nissan Brand',
                                             color: Colors.white,
                                             letterSpacing: 2.0,
-                                            useGoogleFonts: false,
                                           ),
                                       elevation: 3.0,
                                       borderSide: BorderSide(
@@ -379,7 +374,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                         .override(
                                           fontFamily: 'Nissan Brand',
                                           letterSpacing: 0.0,
-                                          useGoogleFonts: false,
                                         ),
                                   ),
                                 ),
@@ -418,7 +412,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -452,17 +445,17 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primary,
-                                                  textStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        color: Colors.white,
-                                                        fontSize: 14.0,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            color: Colors.white,
+                                                            fontSize: 14.0,
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   elevation: 3.0,
                                                   borderSide: BorderSide(
                                                     color: Colors.transparent,
@@ -502,7 +495,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -536,17 +528,17 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primary,
-                                                  textStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        color: Colors.white,
-                                                        fontSize: 14.0,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            color: Colors.white,
+                                                            fontSize: 14.0,
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   elevation: 3.0,
                                                   borderSide: BorderSide(
                                                     color: Colors.transparent,
@@ -587,7 +579,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -621,17 +612,17 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primary,
-                                                  textStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        color: Colors.white,
-                                                        fontSize: 14.0,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            color: Colors.white,
+                                                            fontSize: 14.0,
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   elevation: 3.0,
                                                   borderSide: BorderSide(
                                                     color: Colors.transparent,
@@ -667,7 +658,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -700,17 +690,17 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primary,
-                                                  textStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            'Nissan Brand',
-                                                        color: Colors.white,
-                                                        fontSize: 14.0,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            color: Colors.white,
+                                                            fontSize: 14.0,
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   elevation: 3.0,
                                                   borderSide: BorderSide(
                                                     color: Colors.transparent,
@@ -748,7 +738,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -768,7 +757,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -789,7 +777,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -811,7 +798,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -832,7 +818,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -854,7 +839,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -875,7 +859,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                 ),
@@ -904,7 +887,6 @@ class _TaskDetailsConcesWidgetState extends State<TaskDetailsConcesWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),

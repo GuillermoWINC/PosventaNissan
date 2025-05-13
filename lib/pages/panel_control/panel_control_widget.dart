@@ -122,7 +122,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -193,7 +192,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                       fontFamily: 'Nissan Brand',
                                       fontSize: 30.0,
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -244,7 +242,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -276,7 +273,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.normal,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                             FaIcon(
@@ -328,7 +324,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.normal,
-                                                        useGoogleFonts: false,
                                                       ),
                                                 );
                                               },
@@ -350,7 +345,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.normal,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                             FaIcon(
@@ -401,7 +395,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.normal,
-                                                        useGoogleFonts: false,
                                                       ),
                                                 );
                                               },
@@ -423,7 +416,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.normal,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                             FaIcon(
@@ -474,7 +466,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.normal,
-                                                        useGoogleFonts: false,
                                                       ),
                                                 );
                                               },
@@ -496,7 +487,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.normal,
-                                                        useGoogleFonts: false,
                                                       ),
                                             ),
                                             FaIcon(
@@ -549,7 +539,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.normal,
-                                                        useGoogleFonts: false,
                                                       ),
                                                 );
                                               },
@@ -645,8 +634,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w600,
-                                                            useGoogleFonts:
-                                                                false,
                                                           ),
                                                     ),
                                                   ),
@@ -696,8 +683,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                         hintText:
                                                             'Selecciona ASPM',
@@ -793,7 +778,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.normal,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   FaIcon(
@@ -860,8 +844,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                               fontWeight:
                                                                   FontWeight
                                                                       .normal,
-                                                              useGoogleFonts:
-                                                                  false,
                                                             ),
                                                       );
                                                     },
@@ -883,7 +865,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.normal,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   FaIcon(
@@ -950,8 +931,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                               fontWeight:
                                                                   FontWeight
                                                                       .normal,
-                                                              useGoogleFonts:
-                                                                  false,
                                                             ),
                                                       );
                                                     },
@@ -973,7 +952,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.normal,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   FaIcon(
@@ -1040,8 +1018,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                               fontWeight:
                                                                   FontWeight
                                                                       .normal,
-                                                              useGoogleFonts:
-                                                                  false,
                                                             ),
                                                       );
                                                     },
@@ -1063,7 +1039,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.normal,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   FaIcon(
@@ -1132,8 +1107,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                               fontWeight:
                                                                   FontWeight
                                                                       .normal,
-                                                              useGoogleFonts:
-                                                                  false,
                                                             ),
                                                       );
                                                     },
@@ -1232,8 +1205,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w600,
-                                                            useGoogleFonts:
-                                                                false,
                                                           ),
                                                     ),
                                                   ),
@@ -1268,8 +1239,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                         hintText:
                                                             'Selecciona Grupo',
@@ -1363,7 +1332,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.normal,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   FaIcon(
@@ -1430,8 +1398,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                               fontWeight:
                                                                   FontWeight
                                                                       .normal,
-                                                              useGoogleFonts:
-                                                                  false,
                                                             ),
                                                       );
                                                     },
@@ -1453,7 +1419,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.normal,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   FaIcon(
@@ -1520,8 +1485,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                               fontWeight:
                                                                   FontWeight
                                                                       .normal,
-                                                              useGoogleFonts:
-                                                                  false,
                                                             ),
                                                       );
                                                     },
@@ -1543,7 +1506,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.normal,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   FaIcon(
@@ -1610,8 +1572,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                               fontWeight:
                                                                   FontWeight
                                                                       .normal,
-                                                              useGoogleFonts:
-                                                                  false,
                                                             ),
                                                       );
                                                     },
@@ -1633,7 +1593,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.normal,
-                                                          useGoogleFonts: false,
                                                         ),
                                                   ),
                                                   FaIcon(
@@ -1702,8 +1661,6 @@ class _PanelControlWidgetState extends State<PanelControlWidget> {
                                                               fontWeight:
                                                                   FontWeight
                                                                       .normal,
-                                                              useGoogleFonts:
-                                                                  false,
                                                             ),
                                                       );
                                                     },

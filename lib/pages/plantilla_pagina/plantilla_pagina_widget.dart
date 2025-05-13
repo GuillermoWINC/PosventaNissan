@@ -78,7 +78,6 @@ class _PlantillaPaginaWidgetState extends State<PlantillaPaginaWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -148,7 +147,6 @@ class _PlantillaPaginaWidgetState extends State<PlantillaPaginaWidget> {
                                     .override(
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),

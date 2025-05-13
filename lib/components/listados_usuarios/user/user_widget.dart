@@ -127,7 +127,6 @@ class _UserWidgetState extends State<UserWidget> {
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                               Padding(
@@ -143,7 +142,6 @@ class _UserWidgetState extends State<UserWidget> {
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                 ),
                               ),
@@ -157,7 +155,6 @@ class _UserWidgetState extends State<UserWidget> {
                                       .override(
                                         fontFamily: 'Nissan Brand',
                                         letterSpacing: 0.0,
-                                        useGoogleFonts: false,
                                       ),
                                 ),
                               ),

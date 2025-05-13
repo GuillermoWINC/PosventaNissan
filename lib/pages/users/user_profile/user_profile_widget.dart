@@ -106,7 +106,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
-                  useGoogleFonts: false,
                 ),
           ),
           actions: [],
@@ -189,7 +188,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                           .override(
                                             fontFamily: 'Nissan Brand',
                                             letterSpacing: 0.0,
-                                            useGoogleFonts: false,
                                           ),
                                     ),
                                   ),
@@ -217,7 +215,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                         .accent1,
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -272,7 +269,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                     icon: Icon(
                                                       Icons
@@ -329,7 +325,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 hintText: 'Grupo',
                                                 icon: Icon(
@@ -379,7 +374,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                         .accent1,
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -485,8 +479,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                       'Nissan Brand',
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  useGoogleFonts:
-                                                                      false,
                                                                 ),
                                                         icon: Icon(
                                                           Icons
@@ -545,7 +537,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                         .accent1,
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -574,7 +565,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
@@ -635,7 +625,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               validator: _model
                                                   .companyTextControllerValidator
@@ -665,7 +654,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                         .accent1,
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -694,7 +682,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
@@ -755,7 +742,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               validator: _model
                                                   .nameTextControllerValidator
@@ -785,7 +771,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                         .accent1,
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.0,
-                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -813,7 +798,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                           fontFamily:
                                                               'Nissan Brand',
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
@@ -874,7 +858,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                         fontFamily:
                                                             'Nissan Brand',
                                                         letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
                                                       ),
                                               validator: _model
                                                   .emailTextControllerValidator
@@ -934,7 +917,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                               .accent1,
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -1057,8 +1039,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                               'Nissan Brand',
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              false,
                                                                         ),
                                                                     icon: Icon(
                                                                       Icons
@@ -1110,8 +1090,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                               'Nissan Brand',
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              false,
                                                                         ),
                                                                   ),
                                                                 ),
@@ -1177,7 +1155,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                               .accent1,
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
-                                                          useGoogleFonts: false,
                                                         ),
                                               ),
                                             ),
@@ -1300,8 +1277,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                               'Nissan Brand',
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              false,
                                                                         ),
                                                                     icon: Icon(
                                                                       Icons
@@ -1353,8 +1328,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                                                               'Nissan Brand',
                                                                           letterSpacing:
                                                                               0.0,
-                                                                          useGoogleFonts:
-                                                                              false,
                                                                         ),
                                                                   ),
                                                                 ),
@@ -1414,7 +1387,6 @@ class _UserProfileWidgetState extends State<UserProfileWidget> {
                                               fontFamily: 'Nissan Brand',
                                               color: Colors.white,
                                               letterSpacing: 2.0,
-                                              useGoogleFonts: false,
                                             ),
                                         elevation: 3.0,
                                         borderSide: BorderSide(

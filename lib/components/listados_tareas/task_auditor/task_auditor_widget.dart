@@ -166,7 +166,6 @@ class _TaskAuditorWidgetState extends State<TaskAuditorWidget> {
                                       fontFamily: 'Nissan Brand',
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -185,7 +184,6 @@ class _TaskAuditorWidgetState extends State<TaskAuditorWidget> {
                                       fontSize: 13.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w300,
-                                      useGoogleFonts: false,
                                     ),
                               ),
                             ),
@@ -240,7 +238,6 @@ class _TaskAuditorWidgetState extends State<TaskAuditorWidget> {
                                   color: Colors.white,
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: false,
                                 ),
                             elevation: 3.0,
                             borderSide: BorderSide(

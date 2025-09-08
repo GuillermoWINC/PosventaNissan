@@ -1,6 +1,6 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'home_model.dart';
 export 'home_model.dart';
 
@@ -56,6 +57,30 @@ class _HomeWidgetState extends State<HomeWidget> {
           .toList()
           .toList()
           .cast<DocumentReference>();
+      _model.concesionariosTodos = await queryUsersRecordOnce(
+        queryBuilder: (usersRecord) => usersRecord.where(
+          'role',
+          isEqualTo: 'Concesionario',
+        ),
+      );
+      FFAppState().concesionarios = _model.concesionariosTodos!
+          .map((e) => e.reference)
+          .toList()
+          .toList()
+          .cast<DocumentReference>();
+      safeSetState(() {});
+      _model.aspmTodos = await queryUsersRecordOnce(
+        queryBuilder: (usersRecord) => usersRecord.where(
+          'role',
+          isEqualTo: 'ASPM',
+        ),
+      );
+      FFAppState().aspms = _model.aspmTodos!
+          .map((e) => e.reference)
+          .toList()
+          .toList()
+          .cast<DocumentReference>();
+      safeSetState(() {});
       _model.tareasBronce = await queryAssignmentsRecordOnce(
         queryBuilder: (assignmentsRecord) => assignmentsRecord.where(
           'task_category',
@@ -113,10 +138,12 @@ class _HomeWidgetState extends State<HomeWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         drawer: Drawer(
           elevation: 16.0,
-          child: wrapWithModel(
-            model: _model.sideNavModel,
-            updateCallback: () => safeSetState(() {}),
-            child: SideNavWidget(),
+          child: WebViewAware(
+            child: wrapWithModel(
+              model: _model.sideNavModel,
+              updateCallback: () => safeSetState(() {}),
+              child: SideNavWidget(),
+            ),
           ),
         ),
         appBar: AppBar(
@@ -128,20 +155,12 @@ class _HomeWidgetState extends State<HomeWidget> {
             borderWidth: 1.0,
             buttonSize: 60.0,
             icon: Icon(
-              Icons.home,
+              Icons.menu_rounded,
               color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed(
-                HomeWidget.routeName,
-                extra: <String, dynamic>{
-                  kTransitionInfoKey: TransitionInfo(
-                    hasTransition: true,
-                    transitionType: PageTransitionType.fade,
-                  ),
-                },
-              );
+              scaffoldKey.currentState!.openDrawer();
             },
           ),
           title: Text(

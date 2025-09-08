@@ -1,6 +1,6 @@
 import '/backend/backend.dart';
 import '/components/listados_usuarios/user/user_widget.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -8,6 +8,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'user_management_model.dart';
 export 'user_management_model.dart';
 
@@ -65,10 +66,12 @@ class _UserManagementWidgetState extends State<UserManagementWidget> {
         ),
         drawer: Drawer(
           elevation: 16.0,
-          child: wrapWithModel(
-            model: _model.sideNavModel,
-            updateCallback: () => safeSetState(() {}),
-            child: SideNavWidget(),
+          child: WebViewAware(
+            child: wrapWithModel(
+              model: _model.sideNavModel,
+              updateCallback: () => safeSetState(() {}),
+              child: SideNavWidget(),
+            ),
           ),
         ),
         appBar: AppBar(
@@ -80,16 +83,16 @@ class _UserManagementWidgetState extends State<UserManagementWidget> {
             borderWidth: 1.0,
             buttonSize: 60.0,
             icon: Icon(
-              Icons.home,
+              Icons.menu_rounded,
               color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed(HomeWidget.routeName);
+              scaffoldKey.currentState!.openDrawer();
             },
           ),
           title: Text(
-            'App Venta Exterior Nissan',
+            'Venta Exterior Nissan',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
@@ -122,37 +125,6 @@ class _UserManagementWidgetState extends State<UserManagementWidget> {
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            if (responsiveVisibility(
-                              context: context,
-                              phone: false,
-                            ))
-                              Container(
-                                width: double.infinity,
-                                height: 24.0,
-                                decoration: BoxDecoration(),
-                              ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 0.0, 12.0),
-                              child: FlutterFlowIconButton(
-                                borderColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                borderRadius: 12.0,
-                                borderWidth: 1.0,
-                                buttonSize: 40.0,
-                                fillColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                icon: Icon(
-                                  Icons.arrow_back_rounded,
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  size: 24.0,
-                                ),
-                                onPressed: () async {
-                                  context.pushNamed(HomeWidget.routeName);
-                                },
-                              ),
-                            ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 0.0, 4.0),

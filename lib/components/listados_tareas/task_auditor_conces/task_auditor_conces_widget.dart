@@ -181,8 +181,10 @@ class _TaskAuditorConcesWidgetState extends State<TaskAuditorConcesWidget> {
                           ),
                         ),
                       ),
-                    if ((valueOrDefault(currentUserDocument?.role, '') ==
-                            'Auditor') &&
+                    if (((valueOrDefault(currentUserDocument?.role, '') ==
+                                'Auditor') ||
+                            (valueOrDefault(currentUserDocument?.role, '') ==
+                                'ASPM')) &&
                         ((widget.userDoneDoc?.auditResult == 'Enviada') ||
                             ((widget.userDoneDoc?.auditResult ==
                                     'Rechazada') &&

@@ -1,4 +1,4 @@
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'profile_authenticated_widget.dart' show ProfileAuthenticatedWidget;

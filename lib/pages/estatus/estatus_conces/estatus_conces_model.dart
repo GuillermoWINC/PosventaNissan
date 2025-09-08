@@ -1,6 +1,5 @@
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'estatus_conces_widget.dart' show EstatusConcesWidget;
 import 'package:flutter/material.dart';
 

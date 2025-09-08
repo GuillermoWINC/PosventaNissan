@@ -1,12 +1,13 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/components/listados_usuarios/concesionario/concesionario_widget.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'concesionarios_model.dart';
 export 'concesionarios_model.dart';
 
@@ -69,10 +70,12 @@ class _ConcesionariosWidgetState extends State<ConcesionariosWidget> {
         ),
         drawer: Drawer(
           elevation: 16.0,
-          child: wrapWithModel(
-            model: _model.sideNavModel,
-            updateCallback: () => safeSetState(() {}),
-            child: SideNavWidget(),
+          child: WebViewAware(
+            child: wrapWithModel(
+              model: _model.sideNavModel,
+              updateCallback: () => safeSetState(() {}),
+              child: SideNavWidget(),
+            ),
           ),
         ),
         appBar: AppBar(
@@ -84,12 +87,12 @@ class _ConcesionariosWidgetState extends State<ConcesionariosWidget> {
             borderWidth: 1.0,
             buttonSize: 60.0,
             icon: Icon(
-              Icons.home,
+              Icons.menu_rounded,
               color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed(HomeWidget.routeName);
+              scaffoldKey.currentState!.openDrawer();
             },
           ),
           title: Text(
@@ -125,37 +128,6 @@ class _ConcesionariosWidgetState extends State<ConcesionariosWidget> {
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            if (responsiveVisibility(
-                              context: context,
-                              phone: false,
-                            ))
-                              Container(
-                                width: double.infinity,
-                                height: 24.0,
-                                decoration: BoxDecoration(),
-                              ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 0.0, 12.0),
-                              child: FlutterFlowIconButton(
-                                borderColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                borderRadius: 12.0,
-                                borderWidth: 1.0,
-                                buttonSize: 40.0,
-                                fillColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                icon: Icon(
-                                  Icons.arrow_back_rounded,
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  size: 24.0,
-                                ),
-                                onPressed: () async {
-                                  context.safePop();
-                                },
-                              ),
-                            ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 0.0, 4.0),

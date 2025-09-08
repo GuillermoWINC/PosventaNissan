@@ -1,14 +1,15 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/components/documentacion/motivo_rechazo/motivo_rechazo_widget.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'task_review_model.dart';
 export 'task_review_model.dart';
 
@@ -88,10 +89,12 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             drawer: Drawer(
               elevation: 16.0,
-              child: wrapWithModel(
-                model: _model.sideNavModel,
-                updateCallback: () => safeSetState(() {}),
-                child: SideNavWidget(),
+              child: WebViewAware(
+                child: wrapWithModel(
+                  model: _model.sideNavModel,
+                  updateCallback: () => safeSetState(() {}),
+                  child: SideNavWidget(),
+                ),
               ),
             ),
             appBar: AppBar(
@@ -103,12 +106,12 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                 borderWidth: 1.0,
                 buttonSize: 60.0,
                 icon: Icon(
-                  Icons.home,
+                  Icons.menu_rounded,
                   color: Colors.white,
                   size: 30.0,
                 ),
                 onPressed: () async {
-                  context.pushNamed(HomeWidget.routeName);
+                  scaffoldKey.currentState!.openDrawer();
                 },
               ),
               title: Text(
@@ -972,329 +975,402 @@ class _TaskReviewWidgetState extends State<TaskReviewWidget> {
                               ),
                             ),
                           ),
-                          if ((widget.userDoneDoc?.auditResult !=
-                                  'Rechazada') &&
-                              (widget.userDoneDoc?.auditResult !=
-                                  'Aprobada') &&
-                              (widget.userDoneDoc?.auditResult != 'Pendiente'))
-                            Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 20.0, 0.0, 0.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      await showModalBottomSheet(
-                                        isScrollControlled: true,
-                                        backgroundColor: Colors.transparent,
-                                        enableDrag: false,
-                                        context: context,
-                                        builder: (context) {
-                                          return GestureDetector(
-                                            onTap: () {
-                                              FocusScope.of(context).unfocus();
-                                              FocusManager.instance.primaryFocus
-                                                  ?.unfocus();
-                                            },
-                                            child: Padding(
-                                              padding: MediaQuery.viewInsetsOf(
-                                                  context),
-                                              child: MotivoRechazoWidget(
-                                                userDoc: taskReviewUsersRecord,
-                                                taskName:
-                                                    columnAssignmentsRecord
-                                                        .taskName,
-                                                userDoneDoc:
-                                                    widget.userDoneDoc!,
-                                              ),
-                                            ),
-                                          );
-                                        },
-                                      ).then((value) => safeSetState(() {}));
-                                    },
-                                    text: 'Rechazar',
-                                    icon: Icon(
-                                      Icons.remove_circle_outline_rounded,
-                                      size: 20.0,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 0.0, 12.0, 0.0),
-                                      iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondary,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Nissan Brand',
-                                            color: Colors.white,
-                                            letterSpacing: 2.0,
-                                          ),
-                                      elevation: 3.0,
-                                      borderSide: BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(6.0),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 20.0, 0.0, 0.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      var confirmDialogResponse =
-                                          await showDialog<bool>(
-                                                context: context,
-                                                builder: (alertDialogContext) {
-                                                  return AlertDialog(
-                                                    title: Text(
-                                                        'Confirmar Cumplimiento'),
-                                                    content: Text(
-                                                        '¿Quieres confirmar el cumplimiento de esta condición?'),
-                                                    actions: [
-                                                      TextButton(
-                                                        onPressed: () =>
-                                                            Navigator.pop(
-                                                                alertDialogContext,
-                                                                false),
-                                                        child: Text('Cancelar'),
-                                                      ),
-                                                      TextButton(
-                                                        onPressed: () =>
-                                                            Navigator.pop(
-                                                                alertDialogContext,
-                                                                true),
-                                                        child:
-                                                            Text('Confirmar'),
-                                                      ),
-                                                    ],
-                                                  );
-                                                },
-                                              ) ??
-                                              false;
-                                      if (confirmDialogResponse) {
-                                        await widget.userDoneDoc!.reference
-                                            .update({
-                                          ...createUserDoneRecordData(
-                                            auditResult: 'Aprobada',
-                                          ),
-                                          ...mapToFirestore(
-                                            {
-                                              'modificationDate':
-                                                  FieldValue.serverTimestamp(),
-                                            },
-                                          ),
-                                        });
-
-                                        await ActivityLogRecord.collection
-                                            .doc()
-                                            .set({
-                                          ...createActivityLogRecordData(
-                                            userID: widget.userDoneDoc?.userID,
-                                            action: 'Solicitud Aprobada',
-                                            details: columnAssignmentsRecord
-                                                .taskName,
-                                          ),
-                                          ...mapToFirestore(
-                                            {
-                                              'timestamp':
-                                                  FieldValue.serverTimestamp(),
-                                            },
-                                          ),
-                                        });
-                                        ScaffoldMessenger.of(context)
-                                            .showSnackBar(
-                                          SnackBar(
-                                            content: Text(
-                                              'Condición Aprobada',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .labelLarge
-                                                  .override(
-                                                    fontFamily: 'Nissan Brand',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryBackground,
-                                                    letterSpacing: 0.0,
-                                                  ),
-                                              textAlign: TextAlign.center,
-                                            ),
-                                            duration:
-                                                Duration(milliseconds: 4000),
-                                            backgroundColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .success,
-                                          ),
-                                        );
-                                      } else {
-                                        return;
-                                      }
-
-                                      context.safePop();
-                                    },
-                                    text: 'Aprobar',
-                                    icon: Icon(
-                                      Icons.check_circle_outline_rounded,
-                                      size: 20.0,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 0.0, 12.0, 0.0),
-                                      iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color:
-                                          FlutterFlowTheme.of(context).success,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Nissan Brand',
-                                            color: Colors.white,
-                                            letterSpacing: 2.0,
-                                          ),
-                                      elevation: 3.0,
-                                      borderSide: BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(6.0),
-                                    ),
-                                  ),
-                                ),
-                              ].divide(SizedBox(width: 20.0)),
-                            ),
-                          if ((widget.userDoneDoc?.auditResult !=
-                                  'No enviada') &&
-                              (widget.userDoneDoc?.auditResult != 'Enviada'))
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 20.0, 0.0, 0.0),
-                              child: Row(
+                          if (valueOrDefault(currentUserDocument?.role, '') !=
+                              'ASPM')
+                            AuthUserStreamWidget(
+                              builder: (context) => Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Stack(
-                                    children: [
-                                      if (widget.userDoneDoc?.auditResult ==
-                                          'Aprobada')
-                                        Icon(
-                                          Icons.check_circle_outline_rounded,
-                                          color: FlutterFlowTheme.of(context)
-                                              .success,
-                                          size: 32.0,
-                                        ),
-                                      if (widget.userDoneDoc?.auditResult ==
-                                          'Rechazada')
-                                        Icon(
-                                          Icons.remove_circle_outline_rounded,
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondary,
-                                          size: 32.0,
-                                        ),
-                                      if (widget.userDoneDoc?.auditResult ==
-                                          'Pendiente')
-                                        Icon(
-                                          Icons.circle_sharp,
-                                          color: FlutterFlowTheme.of(context)
-                                              .accent1,
-                                          size: 32.0,
-                                        ),
-                                    ],
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        10.0, 0.0, 0.0, 0.0),
-                                    child: Text(
-                                      valueOrDefault<String>(
-                                        widget.userDoneDoc?.auditResult,
-                                        'result',
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .titleMedium
-                                          .override(
-                                            fontFamily: 'Nissan Brand',
-                                            letterSpacing: 0.0,
-                                          ),
-                                    ),
-                                  ),
-                                  if (widget.userDoneDoc?.auditResult ==
-                                      'Aprobada')
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          20.0, 0.0, 0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () async {
-                                          await showModalBottomSheet(
-                                            isScrollControlled: true,
-                                            backgroundColor: Colors.transparent,
-                                            enableDrag: false,
-                                            context: context,
-                                            builder: (context) {
-                                              return GestureDetector(
-                                                onTap: () {
-                                                  FocusScope.of(context)
-                                                      .unfocus();
-                                                  FocusManager
-                                                      .instance.primaryFocus
-                                                      ?.unfocus();
-                                                },
-                                                child: Padding(
-                                                  padding:
-                                                      MediaQuery.viewInsetsOf(
-                                                          context),
-                                                  child: MotivoRechazoWidget(
-                                                    userDoc:
-                                                        taskReviewUsersRecord,
-                                                    taskName:
-                                                        columnAssignmentsRecord
-                                                            .taskName,
-                                                    userDoneDoc:
-                                                        widget.userDoneDoc!,
-                                                  ),
-                                                ),
-                                              );
-                                            },
-                                          ).then(
-                                              (value) => safeSetState(() {}));
-                                        },
-                                        text: 'Rechazar',
-                                        icon: Icon(
-                                          Icons.remove_circle_outline_rounded,
-                                          size: 14.0,
-                                        ),
-                                        options: FFButtonOptions(
-                                          height: 32.0,
+                                  if ((widget.userDoneDoc?.auditResult !=
+                                          'Rechazada') &&
+                                      (widget.userDoneDoc?.auditResult !=
+                                          'Aprobada') &&
+                                      (widget.userDoneDoc?.auditResult !=
+                                          'Pendiente'))
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  8.0, 0.0, 8.0, 0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondary,
-                                          textStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmall
-                                                  .override(
-                                                    fontFamily: 'Nissan Brand',
-                                                    color: Colors.white,
-                                                    fontSize: 12.0,
-                                                    letterSpacing: 2.0,
-                                                  ),
-                                          elevation: 3.0,
-                                          borderSide: BorderSide(
-                                            color: Colors.transparent,
-                                            width: 1.0,
+                                                  0.0, 20.0, 0.0, 0.0),
+                                          child: FFButtonWidget(
+                                            onPressed: () async {
+                                              await showModalBottomSheet(
+                                                isScrollControlled: true,
+                                                backgroundColor:
+                                                    Colors.transparent,
+                                                enableDrag: false,
+                                                context: context,
+                                                builder: (context) {
+                                                  return WebViewAware(
+                                                    child: GestureDetector(
+                                                      onTap: () {
+                                                        FocusScope.of(context)
+                                                            .unfocus();
+                                                        FocusManager.instance
+                                                            .primaryFocus
+                                                            ?.unfocus();
+                                                      },
+                                                      child: Padding(
+                                                        padding: MediaQuery
+                                                            .viewInsetsOf(
+                                                                context),
+                                                        child:
+                                                            MotivoRechazoWidget(
+                                                          userDoc:
+                                                              taskReviewUsersRecord,
+                                                          taskName:
+                                                              columnAssignmentsRecord
+                                                                  .taskName,
+                                                          userDoneDoc: widget
+                                                              .userDoneDoc!,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  );
+                                                },
+                                              ).then((value) =>
+                                                  safeSetState(() {}));
+                                            },
+                                            text: 'Rechazar',
+                                            icon: Icon(
+                                              Icons
+                                                  .remove_circle_outline_rounded,
+                                              size: 20.0,
+                                            ),
+                                            options: FFButtonOptions(
+                                              height: 40.0,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      12.0, 0.0, 12.0, 0.0),
+                                              iconPadding: EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondary,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily:
+                                                            'Nissan Brand',
+                                                        color: Colors.white,
+                                                        letterSpacing: 2.0,
+                                                      ),
+                                              elevation: 3.0,
+                                              borderSide: BorderSide(
+                                                color: Colors.transparent,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(6.0),
+                                            ),
                                           ),
-                                          borderRadius:
-                                              BorderRadius.circular(6.0),
                                         ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 20.0, 0.0, 0.0),
+                                          child: FFButtonWidget(
+                                            onPressed: () async {
+                                              var confirmDialogResponse =
+                                                  await showDialog<bool>(
+                                                        context: context,
+                                                        builder:
+                                                            (alertDialogContext) {
+                                                          return WebViewAware(
+                                                            child: AlertDialog(
+                                                              title: Text(
+                                                                  'Confirmar Cumplimiento'),
+                                                              content: Text(
+                                                                  '¿Quieres confirmar el cumplimiento de esta condición?'),
+                                                              actions: [
+                                                                TextButton(
+                                                                  onPressed: () =>
+                                                                      Navigator.pop(
+                                                                          alertDialogContext,
+                                                                          false),
+                                                                  child: Text(
+                                                                      'Cancelar'),
+                                                                ),
+                                                                TextButton(
+                                                                  onPressed: () =>
+                                                                      Navigator.pop(
+                                                                          alertDialogContext,
+                                                                          true),
+                                                                  child: Text(
+                                                                      'Confirmar'),
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          );
+                                                        },
+                                                      ) ??
+                                                      false;
+                                              if (confirmDialogResponse) {
+                                                await widget
+                                                    .userDoneDoc!.reference
+                                                    .update({
+                                                  ...createUserDoneRecordData(
+                                                    auditResult: 'Aprobada',
+                                                  ),
+                                                  ...mapToFirestore(
+                                                    {
+                                                      'modificationDate':
+                                                          FieldValue
+                                                              .serverTimestamp(),
+                                                    },
+                                                  ),
+                                                });
+
+                                                await ActivityLogRecord
+                                                    .collection
+                                                    .doc()
+                                                    .set({
+                                                  ...createActivityLogRecordData(
+                                                    userID: widget
+                                                        .userDoneDoc?.userID,
+                                                    action:
+                                                        'Solicitud Aprobada',
+                                                    details:
+                                                        columnAssignmentsRecord
+                                                            .taskName,
+                                                  ),
+                                                  ...mapToFirestore(
+                                                    {
+                                                      'timestamp': FieldValue
+                                                          .serverTimestamp(),
+                                                    },
+                                                  ),
+                                                });
+                                                ScaffoldMessenger.of(context)
+                                                    .showSnackBar(
+                                                  SnackBar(
+                                                    content: Text(
+                                                      'Condición Aprobada',
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .labelLarge
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Nissan Brand',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryBackground,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                    ),
+                                                    duration: Duration(
+                                                        milliseconds: 4000),
+                                                    backgroundColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .success,
+                                                  ),
+                                                );
+                                              } else {
+                                                return;
+                                              }
+
+                                              context.safePop();
+                                            },
+                                            text: 'Aprobar',
+                                            icon: Icon(
+                                              Icons
+                                                  .check_circle_outline_rounded,
+                                              size: 20.0,
+                                            ),
+                                            options: FFButtonOptions(
+                                              height: 40.0,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      12.0, 0.0, 12.0, 0.0),
+                                              iconPadding: EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .success,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily:
+                                                            'Nissan Brand',
+                                                        color: Colors.white,
+                                                        letterSpacing: 2.0,
+                                                      ),
+                                              elevation: 3.0,
+                                              borderSide: BorderSide(
+                                                color: Colors.transparent,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(6.0),
+                                            ),
+                                          ),
+                                        ),
+                                      ].divide(SizedBox(width: 20.0)),
+                                    ),
+                                  if ((widget.userDoneDoc?.auditResult !=
+                                          'No enviada') &&
+                                      (widget.userDoneDoc?.auditResult !=
+                                          'Enviada'))
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 20.0, 0.0, 0.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Stack(
+                                            children: [
+                                              if (widget.userDoneDoc
+                                                      ?.auditResult ==
+                                                  'Aprobada')
+                                                Icon(
+                                                  Icons
+                                                      .check_circle_outline_rounded,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .success,
+                                                  size: 32.0,
+                                                ),
+                                              if (widget.userDoneDoc
+                                                      ?.auditResult ==
+                                                  'Rechazada')
+                                                Icon(
+                                                  Icons
+                                                      .remove_circle_outline_rounded,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondary,
+                                                  size: 32.0,
+                                                ),
+                                              if (widget.userDoneDoc
+                                                      ?.auditResult ==
+                                                  'Pendiente')
+                                                Icon(
+                                                  Icons.circle_sharp,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .accent1,
+                                                  size: 32.0,
+                                                ),
+                                            ],
+                                          ),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    10.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              valueOrDefault<String>(
+                                                widget
+                                                    .userDoneDoc?.auditResult,
+                                                'result',
+                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            'Nissan Brand',
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                            ),
+                                          ),
+                                          if (widget
+                                                  .userDoneDoc?.auditResult ==
+                                              'Aprobada')
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      20.0, 0.0, 0.0, 0.0),
+                                              child: FFButtonWidget(
+                                                onPressed: () async {
+                                                  await showModalBottomSheet(
+                                                    isScrollControlled: true,
+                                                    backgroundColor:
+                                                        Colors.transparent,
+                                                    enableDrag: false,
+                                                    context: context,
+                                                    builder: (context) {
+                                                      return WebViewAware(
+                                                        child: GestureDetector(
+                                                          onTap: () {
+                                                            FocusScope.of(
+                                                                    context)
+                                                                .unfocus();
+                                                            FocusManager
+                                                                .instance
+                                                                .primaryFocus
+                                                                ?.unfocus();
+                                                          },
+                                                          child: Padding(
+                                                            padding: MediaQuery
+                                                                .viewInsetsOf(
+                                                                    context),
+                                                            child:
+                                                                MotivoRechazoWidget(
+                                                              userDoc:
+                                                                  taskReviewUsersRecord,
+                                                              taskName:
+                                                                  columnAssignmentsRecord
+                                                                      .taskName,
+                                                              userDoneDoc: widget
+                                                                  .userDoneDoc!,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      );
+                                                    },
+                                                  ).then((value) =>
+                                                      safeSetState(() {}));
+                                                },
+                                                text: 'Rechazar',
+                                                icon: Icon(
+                                                  Icons
+                                                      .remove_circle_outline_rounded,
+                                                  size: 14.0,
+                                                ),
+                                                options: FFButtonOptions(
+                                                  height: 32.0,
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          8.0, 0.0, 8.0, 0.0),
+                                                  iconPadding:
+                                                      EdgeInsetsDirectional
+                                                          .fromSTEB(0.0, 0.0,
+                                                              0.0, 0.0),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondary,
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall
+                                                          .override(
+                                                            fontFamily:
+                                                                'Nissan Brand',
+                                                            color: Colors.white,
+                                                            fontSize: 12.0,
+                                                            letterSpacing: 2.0,
+                                                          ),
+                                                  elevation: 3.0,
+                                                  borderSide: BorderSide(
+                                                    color: Colors.transparent,
+                                                    width: 1.0,
+                                                  ),
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          6.0),
+                                                ),
+                                              ),
+                                            ),
+                                        ],
                                       ),
                                     ),
                                 ],

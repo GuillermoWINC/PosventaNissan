@@ -1,4 +1,4 @@
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/index.dart';
@@ -29,13 +29,17 @@ class UserProfileModel extends FlutterFlowModel<UserProfileWidget> {
   // State field(s) for DropDown widget.
   String? dropDownValue2;
   FormFieldController<String>? dropDownValueController2;
+  // State field(s) for company widget.
+  FocusNode? companyFocusNode1;
+  TextEditingController? companyTextController1;
+  String? Function(BuildContext, String?)? companyTextController1Validator;
   // State field(s) for Nivel widget.
   String? nivelValue;
   FormFieldController<String>? nivelValueController;
   // State field(s) for company widget.
-  FocusNode? companyFocusNode;
-  TextEditingController? companyTextController;
-  String? Function(BuildContext, String?)? companyTextControllerValidator;
+  FocusNode? companyFocusNode2;
+  TextEditingController? companyTextController2;
+  String? Function(BuildContext, String?)? companyTextController2Validator;
   // State field(s) for name widget.
   FocusNode? nameFocusNode;
   TextEditingController? nameTextController;
@@ -64,8 +68,11 @@ class UserProfileModel extends FlutterFlowModel<UserProfileWidget> {
 
   @override
   void dispose() {
-    companyFocusNode?.dispose();
-    companyTextController?.dispose();
+    companyFocusNode1?.dispose();
+    companyTextController1?.dispose();
+
+    companyFocusNode2?.dispose();
+    companyTextController2?.dispose();
 
     nameFocusNode?.dispose();
     nameTextController?.dispose();

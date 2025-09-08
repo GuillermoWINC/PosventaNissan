@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '/backend/backend.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 
 class FFAppState extends ChangeNotifier {
@@ -16,23 +15,12 @@ class FFAppState extends ChangeNotifier {
     _instance = FFAppState._internal();
   }
 
-  Future initializePersistedState() async {
-    prefs = await SharedPreferences.getInstance();
-    _safeInit(() {
-      _contactoNibsa = prefs.getString('ff_contactoNibsa') ?? _contactoNibsa;
-    });
-    _safeInit(() {
-      _politicaComercialPDF =
-          prefs.getString('ff_politicaComercialPDF') ?? _politicaComercialPDF;
-    });
-  }
+  Future initializePersistedState() async {}
 
   void update(VoidCallback callback) {
     callback();
     notifyListeners();
   }
-
-  late SharedPreferences prefs;
 
   List<DocumentReference> _auditors = [];
   List<DocumentReference> get auditors => _auditors;
@@ -246,14 +234,12 @@ class FFAppState extends ChangeNotifier {
   String get contactoNibsa => _contactoNibsa;
   set contactoNibsa(String value) {
     _contactoNibsa = value;
-    prefs.setString('ff_contactoNibsa', value);
   }
 
   String _politicaComercialPDF = '';
   String get politicaComercialPDF => _politicaComercialPDF;
   set politicaComercialPDF(String value) {
     _politicaComercialPDF = value;
-    prefs.setString('ff_politicaComercialPDF', value);
   }
 
   List<String> _emailsConcesionarios = [];
@@ -325,16 +311,68 @@ class FFAppState extends ChangeNotifier {
   set emailLogin(String value) {
     _emailLogin = value;
   }
-}
 
-void _safeInit(Function() initializeField) {
-  try {
-    initializeField();
-  } catch (_) {}
-}
+  List<DocumentReference> _aspms = [];
+  List<DocumentReference> get aspms => _aspms;
+  set aspms(List<DocumentReference> value) {
+    _aspms = value;
+  }
 
-Future _safeInitAsync(Function() initializeField) async {
-  try {
-    await initializeField();
-  } catch (_) {}
+  void addToAspms(DocumentReference value) {
+    aspms.add(value);
+  }
+
+  void removeFromAspms(DocumentReference value) {
+    aspms.remove(value);
+  }
+
+  void removeAtIndexFromAspms(int index) {
+    aspms.removeAt(index);
+  }
+
+  void updateAspmsAtIndex(
+    int index,
+    DocumentReference Function(DocumentReference) updateFn,
+  ) {
+    aspms[index] = updateFn(_aspms[index]);
+  }
+
+  void insertAtIndexInAspms(int index, DocumentReference value) {
+    aspms.insert(index, value);
+  }
+
+  List<DocumentReference> _concesionarios = [];
+  List<DocumentReference> get concesionarios => _concesionarios;
+  set concesionarios(List<DocumentReference> value) {
+    _concesionarios = value;
+  }
+
+  void addToConcesionarios(DocumentReference value) {
+    concesionarios.add(value);
+  }
+
+  void removeFromConcesionarios(DocumentReference value) {
+    concesionarios.remove(value);
+  }
+
+  void removeAtIndexFromConcesionarios(int index) {
+    concesionarios.removeAt(index);
+  }
+
+  void updateConcesionariosAtIndex(
+    int index,
+    DocumentReference Function(DocumentReference) updateFn,
+  ) {
+    concesionarios[index] = updateFn(_concesionarios[index]);
+  }
+
+  void insertAtIndexInConcesionarios(int index, DocumentReference value) {
+    concesionarios.insert(index, value);
+  }
+
+  String _rankingConcursoPDF = '';
+  String get rankingConcursoPDF => _rankingConcursoPDF;
+  set rankingConcursoPDF(String value) {
+    _rankingConcursoPDF = value;
+  }
 }

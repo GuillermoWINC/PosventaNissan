@@ -11,8 +11,8 @@ class PoliticaComercialUpdateModel
 
   ///  State fields for stateful widgets in this component.
 
-  bool isDataUploading = false;
-  FFUploadedFile uploadedLocalFile =
+  bool isDataUploading_politicaComercialUpload = false;
+  FFUploadedFile uploadedLocalFile_politicaComercialUpload =
       FFUploadedFile(bytes: Uint8List.fromList([]));
 
   @override

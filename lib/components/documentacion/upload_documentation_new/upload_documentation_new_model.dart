@@ -15,20 +15,20 @@ class UploadDocumentationNewModel
   ///  State fields for stateful widgets in this component.
 
   final formKey = GlobalKey<FormState>();
-  bool isDataUploading1 = false;
-  FFUploadedFile uploadedLocalFile1 =
+  bool isDataUploading_newUploadDoc1 = false;
+  FFUploadedFile uploadedLocalFile_newUploadDoc1 =
       FFUploadedFile(bytes: Uint8List.fromList([]));
-  String uploadedFileUrl1 = '';
+  String uploadedFileUrl_newUploadDoc1 = '';
 
-  bool isDataUploading2 = false;
-  FFUploadedFile uploadedLocalFile2 =
+  bool isDataUploading_newUploadDoc2 = false;
+  FFUploadedFile uploadedLocalFile_newUploadDoc2 =
       FFUploadedFile(bytes: Uint8List.fromList([]));
-  String uploadedFileUrl2 = '';
+  String uploadedFileUrl_newUploadDoc2 = '';
 
-  bool isDataUploading3 = false;
-  FFUploadedFile uploadedLocalFile3 =
+  bool isDataUploading_newUploadDoc3 = false;
+  FFUploadedFile uploadedLocalFile_newUploadDoc3 =
       FFUploadedFile(bytes: Uint8List.fromList([]));
-  String uploadedFileUrl3 = '';
+  String uploadedFileUrl_newUploadDoc3 = '';
 
   // State field(s) for projectURL widget.
   FocusNode? projectURLFocusNode;

@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'task_model.dart';
 export 'task_model.dart';
 
@@ -241,11 +242,13 @@ class _TaskWidgetState extends State<TaskWidget> {
                                       enableDrag: false,
                                       context: context,
                                       builder: (context) {
-                                        return Padding(
-                                          padding:
-                                              MediaQuery.viewInsetsOf(context),
-                                          child: UploadDocumentationWidget(
-                                            userDoneDoc: widget.userDoneDoc!,
+                                        return WebViewAware(
+                                          child: Padding(
+                                            padding: MediaQuery.viewInsetsOf(
+                                                context),
+                                            child: UploadDocumentationWidget(
+                                              userDoneDoc: widget.userDoneDoc!,
+                                            ),
                                           ),
                                         );
                                       },

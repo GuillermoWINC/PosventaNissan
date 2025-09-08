@@ -9,6 +9,9 @@ import 'schema/users_record.dart';
 import 'schema/assignments_record.dart';
 import 'schema/user_done_record.dart';
 import 'schema/activity_log_record.dart';
+import 'schema/materiales_venta_exterior_record.dart';
+import 'schema/bono_ve_record.dart';
+import 'schema/doc_upload_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart' hide Order;
@@ -21,6 +24,9 @@ export 'schema/users_record.dart';
 export 'schema/assignments_record.dart';
 export 'schema/user_done_record.dart';
 export 'schema/activity_log_record.dart';
+export 'schema/materiales_venta_exterior_record.dart';
+export 'schema/bono_ve_record.dart';
+export 'schema/doc_upload_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -165,6 +171,118 @@ Future<List<ActivityLogRecord>> queryActivityLogRecordOnce({
     queryCollectionOnce(
       ActivityLogRecord.collection,
       ActivityLogRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query MaterialesVentaExteriorRecords (as a Stream and as a Future).
+Future<int> queryMaterialesVentaExteriorRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      MaterialesVentaExteriorRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<MaterialesVentaExteriorRecord>> queryMaterialesVentaExteriorRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      MaterialesVentaExteriorRecord.collection,
+      MaterialesVentaExteriorRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<MaterialesVentaExteriorRecord>>
+    queryMaterialesVentaExteriorRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+        queryCollectionOnce(
+          MaterialesVentaExteriorRecord.collection,
+          MaterialesVentaExteriorRecord.fromSnapshot,
+          queryBuilder: queryBuilder,
+          limit: limit,
+          singleRecord: singleRecord,
+        );
+
+/// Functions to query BonoVeRecords (as a Stream and as a Future).
+Future<int> queryBonoVeRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      BonoVeRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<BonoVeRecord>> queryBonoVeRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      BonoVeRecord.collection,
+      BonoVeRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<BonoVeRecord>> queryBonoVeRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      BonoVeRecord.collection,
+      BonoVeRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query DocUploadRecords (as a Stream and as a Future).
+Future<int> queryDocUploadRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      DocUploadRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<DocUploadRecord>> queryDocUploadRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      DocUploadRecord.collection,
+      DocUploadRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<DocUploadRecord>> queryDocUploadRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      DocUploadRecord.collection,
+      DocUploadRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

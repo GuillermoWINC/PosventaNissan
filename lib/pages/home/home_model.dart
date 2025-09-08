@@ -1,5 +1,5 @@
 import '/backend/backend.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'home_widget.dart' show HomeWidget;
@@ -12,6 +12,10 @@ class HomeModel extends FlutterFlowModel<HomeWidget> {
   List<AssignmentsRecord>? tareasOro;
   // Stores action output result for [Firestore Query - Query a collection] action in home widget.
   List<AssignmentsRecord>? tareasPlata;
+  // Stores action output result for [Firestore Query - Query a collection] action in home widget.
+  List<UsersRecord>? concesionariosTodos;
+  // Stores action output result for [Firestore Query - Query a collection] action in home widget.
+  List<UsersRecord>? aspmTodos;
   // Stores action output result for [Firestore Query - Query a collection] action in home widget.
   List<AssignmentsRecord>? tareasBronce;
   // Stores action output result for [Firestore Query - Query a collection] action in home widget.

@@ -1,7 +1,6 @@
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
-import '/index.dart';
 import 'tasks_auditor_widget.dart' show TasksAuditorWidget;
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';

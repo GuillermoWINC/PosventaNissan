@@ -77,13 +77,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomeWidget() : AuthLoginWidget(),
+          appStateNotifier.loggedIn ? PanelControlWidget() : AuthLoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomeWidget() : AuthLoginWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? PanelControlWidget()
+              : AuthLoginWidget(),
         ),
         FFRoute(
           name: AuthSolicitarWidget.routeName,
@@ -311,6 +312,46 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ParamType.Document,
             ),
           ),
+        ),
+        FFRoute(
+          name: ContactoWidget.routeName,
+          path: ContactoWidget.routePath,
+          builder: (context, params) => ContactoWidget(),
+        ),
+        FFRoute(
+          name: MaterialesVEWidget.routeName,
+          path: MaterialesVEWidget.routePath,
+          builder: (context, params) => MaterialesVEWidget(),
+        ),
+        FFRoute(
+          name: BonoVEWidget.routeName,
+          path: BonoVEWidget.routePath,
+          builder: (context, params) => BonoVEWidget(),
+        ),
+        FFRoute(
+          name: IncentivosVEWidget.routeName,
+          path: IncentivosVEWidget.routePath,
+          builder: (context, params) => IncentivosVEWidget(),
+        ),
+        FFRoute(
+          name: ConcursoVEWidget.routeName,
+          path: ConcursoVEWidget.routePath,
+          builder: (context, params) => ConcursoVEWidget(),
+        ),
+        FFRoute(
+          name: BonoVEOldWidget.routeName,
+          path: BonoVEOldWidget.routePath,
+          builder: (context, params) => BonoVEOldWidget(),
+        ),
+        FFRoute(
+          name: BonoVEConcesWidget.routeName,
+          path: BonoVEConcesWidget.routePath,
+          builder: (context, params) => BonoVEConcesWidget(),
+        ),
+        FFRoute(
+          name: ConcursoVEConcesWidget.routeName,
+          path: ConcursoVEConcesWidget.routePath,
+          builder: (context, params) => ConcursoVEConcesWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

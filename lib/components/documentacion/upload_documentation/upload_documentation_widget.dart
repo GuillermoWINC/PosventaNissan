@@ -10,6 +10,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'upload_documentation_model.dart';
 export 'upload_documentation_model.dart';
 
@@ -448,7 +449,7 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                       if (selectedFiles !=
                                                                           null) {
                                                                         safeSetState(() =>
-                                                                            _model.isDataUploading1 =
+                                                                            _model.isDataUploading_uploadDoc1 =
                                                                                 true);
                                                                         var selectedUploadedFiles =
                                                                             <FFUploadedFile>[];
@@ -480,7 +481,7 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                         } finally {
                                                                           ScaffoldMessenger.of(context)
                                                                               .hideCurrentSnackBar();
-                                                                          _model.isDataUploading1 =
+                                                                          _model.isDataUploading_uploadDoc1 =
                                                                               false;
                                                                         }
                                                                         if (selectedUploadedFiles.length == selectedFiles.length &&
@@ -488,9 +489,9 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                                 selectedFiles.length) {
                                                                           safeSetState(
                                                                               () {
-                                                                            _model.uploadedLocalFile1 =
+                                                                            _model.uploadedLocalFile_uploadDoc1 =
                                                                                 selectedUploadedFiles.first;
-                                                                            _model.uploadedFileUrl1 =
+                                                                            _model.uploadedFileUrl_uploadDoc1 =
                                                                                 downloadUrls.first;
                                                                           });
                                                                           showUploadMessage(
@@ -696,7 +697,7 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                       if (selectedFiles !=
                                                                           null) {
                                                                         safeSetState(() =>
-                                                                            _model.isDataUploading2 =
+                                                                            _model.isDataUploading_uploadDoc2 =
                                                                                 true);
                                                                         var selectedUploadedFiles =
                                                                             <FFUploadedFile>[];
@@ -728,7 +729,7 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                         } finally {
                                                                           ScaffoldMessenger.of(context)
                                                                               .hideCurrentSnackBar();
-                                                                          _model.isDataUploading2 =
+                                                                          _model.isDataUploading_uploadDoc2 =
                                                                               false;
                                                                         }
                                                                         if (selectedUploadedFiles.length == selectedFiles.length &&
@@ -736,9 +737,9 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                                 selectedFiles.length) {
                                                                           safeSetState(
                                                                               () {
-                                                                            _model.uploadedLocalFile2 =
+                                                                            _model.uploadedLocalFile_uploadDoc2 =
                                                                                 selectedUploadedFiles.first;
-                                                                            _model.uploadedFileUrl2 =
+                                                                            _model.uploadedFileUrl_uploadDoc2 =
                                                                                 downloadUrls.first;
                                                                           });
                                                                           showUploadMessage(
@@ -944,7 +945,7 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                       if (selectedFiles !=
                                                                           null) {
                                                                         safeSetState(() =>
-                                                                            _model.isDataUploading3 =
+                                                                            _model.isDataUploading_uploadDoc3 =
                                                                                 true);
                                                                         var selectedUploadedFiles =
                                                                             <FFUploadedFile>[];
@@ -976,7 +977,7 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                         } finally {
                                                                           ScaffoldMessenger.of(context)
                                                                               .hideCurrentSnackBar();
-                                                                          _model.isDataUploading3 =
+                                                                          _model.isDataUploading_uploadDoc3 =
                                                                               false;
                                                                         }
                                                                         if (selectedUploadedFiles.length == selectedFiles.length &&
@@ -984,9 +985,9 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                                                 selectedFiles.length) {
                                                                           safeSetState(
                                                                               () {
-                                                                            _model.uploadedLocalFile3 =
+                                                                            _model.uploadedLocalFile_uploadDoc3 =
                                                                                 selectedUploadedFiles.first;
-                                                                            _model.uploadedFileUrl3 =
+                                                                            _model.uploadedFileUrl_uploadDoc3 =
                                                                                 downloadUrls.first;
                                                                           });
                                                                           showUploadMessage(
@@ -1640,10 +1641,10 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                       .validate()) {
                                                 return;
                                               }
-                                              if ((_model.uploadedFileUrl1 == '') &&
-                                                  (_model.uploadedFileUrl2 ==
+                                              if ((_model.uploadedFileUrl_uploadDoc1 == '') &&
+                                                  (_model.uploadedFileUrl_uploadDoc2 ==
                                                           '') &&
-                                                  (_model.uploadedFileUrl3 ==
+                                                  (_model.uploadedFileUrl_uploadDoc3 ==
                                                           '') &&
                                                   (_model
                                                               .projectURLTextController.text ==
@@ -1664,18 +1665,20 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                   context: context,
                                                   builder:
                                                       (alertDialogContext) {
-                                                    return AlertDialog(
-                                                      title: Text('Error'),
-                                                      content: Text(
-                                                          'No hay nada que enviar'),
-                                                      actions: [
-                                                        TextButton(
-                                                          onPressed: () =>
-                                                              Navigator.pop(
-                                                                  alertDialogContext),
-                                                          child: Text('Ok'),
-                                                        ),
-                                                      ],
+                                                    return WebViewAware(
+                                                      child: AlertDialog(
+                                                        title: Text('Error'),
+                                                        content: Text(
+                                                            'No hay nada que enviar'),
+                                                        actions: [
+                                                          TextButton(
+                                                            onPressed: () =>
+                                                                Navigator.pop(
+                                                                    alertDialogContext),
+                                                            child: Text('Ok'),
+                                                          ),
+                                                        ],
+                                                      ),
                                                     );
                                                   },
                                                 );
@@ -1689,12 +1692,12 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                         .text,
                                                     checkDR: _model
                                                         .checkboxListTileValue,
-                                                    doc1file:
-                                                        _model.uploadedFileUrl1,
-                                                    doc2file:
-                                                        _model.uploadedFileUrl2,
-                                                    doc3file:
-                                                        _model.uploadedFileUrl3,
+                                                    doc1file: _model
+                                                        .uploadedFileUrl_uploadDoc1,
+                                                    doc2file: _model
+                                                        .uploadedFileUrl_uploadDoc2,
+                                                    doc3file: _model
+                                                        .uploadedFileUrl_uploadDoc3,
                                                     taskDone: true,
                                                     auditResult: 'Enviada',
                                                     telephone: _model
@@ -1739,19 +1742,21 @@ class _UploadDocumentationWidgetState extends State<UploadDocumentationWidget>
                                                   context: context,
                                                   builder:
                                                       (alertDialogContext) {
-                                                    return AlertDialog(
-                                                      title: Text(
-                                                          'Documentación enviada'),
-                                                      content: Text(
-                                                          'Se ha enviado la documentación.'),
-                                                      actions: [
-                                                        TextButton(
-                                                          onPressed: () =>
-                                                              Navigator.pop(
-                                                                  alertDialogContext),
-                                                          child: Text('Ok'),
-                                                        ),
-                                                      ],
+                                                    return WebViewAware(
+                                                      child: AlertDialog(
+                                                        title: Text(
+                                                            'Documentación enviada'),
+                                                        content: Text(
+                                                            'Se ha enviado la documentación.'),
+                                                        actions: [
+                                                          TextButton(
+                                                            onPressed: () =>
+                                                                Navigator.pop(
+                                                                    alertDialogContext),
+                                                            child: Text('Ok'),
+                                                          ),
+                                                        ],
+                                                      ),
                                                     );
                                                   },
                                                 );

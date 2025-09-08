@@ -1,16 +1,16 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
-import '/components/date_picker_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/components/varios/activity_log_list/activity_log_list_widget.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/varios/date_picker/date_picker_widget.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
-import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'activity_log_model.dart';
 export 'activity_log_model.dart';
 
@@ -56,10 +56,12 @@ class _ActivityLogWidgetState extends State<ActivityLogWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         drawer: Drawer(
           elevation: 16.0,
-          child: wrapWithModel(
-            model: _model.sideNavModel,
-            updateCallback: () => safeSetState(() {}),
-            child: SideNavWidget(),
+          child: WebViewAware(
+            child: wrapWithModel(
+              model: _model.sideNavModel,
+              updateCallback: () => safeSetState(() {}),
+              child: SideNavWidget(),
+            ),
           ),
         ),
         appBar: AppBar(
@@ -71,16 +73,16 @@ class _ActivityLogWidgetState extends State<ActivityLogWidget> {
             borderWidth: 1.0,
             buttonSize: 60.0,
             icon: Icon(
-              Icons.home,
+              Icons.menu_rounded,
               color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed(HomeWidget.routeName);
+              scaffoldKey.currentState!.openDrawer();
             },
           ),
           title: Text(
-            'Venta Exterior Nissan Iberia',
+            'Venta Exterior Nissan',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Nissan Brand',
                   color: FlutterFlowTheme.of(context).primaryBackground,
@@ -113,37 +115,6 @@ class _ActivityLogWidgetState extends State<ActivityLogWidget> {
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            if (responsiveVisibility(
-                              context: context,
-                              phone: false,
-                            ))
-                              Container(
-                                width: double.infinity,
-                                height: 24.0,
-                                decoration: BoxDecoration(),
-                              ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 0.0, 12.0),
-                              child: FlutterFlowIconButton(
-                                borderColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                borderRadius: 12.0,
-                                borderWidth: 1.0,
-                                buttonSize: 40.0,
-                                fillColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                icon: Icon(
-                                  Icons.arrow_back_rounded,
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  size: 24.0,
-                                ),
-                                onPressed: () async {
-                                  context.pushNamed(HomeWidget.routeName);
-                                },
-                              ),
-                            ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 0.0, 4.0),
@@ -279,26 +250,43 @@ class _ActivityLogWidgetState extends State<ActivityLogWidget> {
                                             },
                                           ),
                                         ),
-                                      FlutterFlowIconButton(
-                                        borderRadius: 8.0,
-                                        buttonSize: 40.0,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
-                                        icon: Icon(
-                                          Icons.replay,
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryText,
-                                          size: 20.0,
+                                      if ((valueOrDefault(
+                                                  currentUserDocument?.role,
+                                                  '') ==
+                                              'NIBSA') ||
+                                          (valueOrDefault(
+                                                  currentUserDocument?.role,
+                                                  '') ==
+                                              'Auditor') ||
+                                          (valueOrDefault(
+                                                  currentUserDocument?.role,
+                                                  '') ==
+                                              'ASPM'))
+                                        AuthUserStreamWidget(
+                                          builder: (context) =>
+                                              FlutterFlowIconButton(
+                                            borderRadius: 8.0,
+                                            buttonSize: 40.0,
+                                            fillColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .primaryBackground,
+                                            icon: Icon(
+                                              Icons.replay,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                              size: 20.0,
+                                            ),
+                                            onPressed: () async {
+                                              safeSetState(() {
+                                                _model.selectorValueController
+                                                    ?.value = '';
+                                              });
+                                              _model.seleccionDropdown = null;
+                                              safeSetState(() {});
+                                            },
+                                          ),
                                         ),
-                                        onPressed: () async {
-                                          safeSetState(() {
-                                            _model.selectorValueController
-                                                ?.value = '';
-                                          });
-                                          _model.seleccionDropdown = null;
-                                          safeSetState(() {});
-                                        },
-                                      ),
                                     ],
                                   ),
                                 ),

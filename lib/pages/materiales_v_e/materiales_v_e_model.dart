@@ -1,14 +1,9 @@
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
-import 'estatus_a_s_p_my_audit_widget.dart' show EstatusASPMyAuditWidget;
+import 'materiales_v_e_widget.dart' show MaterialesVEWidget;
 import 'package:flutter/material.dart';
 
-class EstatusASPMyAuditModel extends FlutterFlowModel<EstatusASPMyAuditWidget> {
-  ///  Local state fields for this page.
-
-  String? taskIDreset;
-
+class MaterialesVEModel extends FlutterFlowModel<MaterialesVEWidget> {
   ///  State fields for stateful widgets in this page.
 
   // Model for sideNav component.

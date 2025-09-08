@@ -96,6 +96,11 @@ class UsersRecord extends FirestoreRecord {
   String get group => _group ?? '';
   bool hasGroup() => _group != null;
 
+  // "dealer_code" field.
+  String? _dealerCode;
+  String get dealerCode => _dealerCode ?? '';
+  bool hasDealerCode() => _dealerCode != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _displayName = snapshotData['display_name'] as String?;
@@ -113,6 +118,7 @@ class UsersRecord extends FirestoreRecord {
     _aspm = snapshotData['aspm'] as DocumentReference?;
     _uid = snapshotData['uid'] as String?;
     _group = snapshotData['group'] as String?;
+    _dealerCode = snapshotData['dealer_code'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -164,6 +170,7 @@ Map<String, dynamic> createUsersRecordData({
   DocumentReference? aspm,
   String? uid,
   String? group,
+  String? dealerCode,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -182,6 +189,7 @@ Map<String, dynamic> createUsersRecordData({
       'aspm': aspm,
       'uid': uid,
       'group': group,
+      'dealer_code': dealerCode,
     }.withoutNulls,
   );
 
@@ -209,7 +217,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.auditor == e2?.auditor &&
         e1?.aspm == e2?.aspm &&
         e1?.uid == e2?.uid &&
-        e1?.group == e2?.group;
+        e1?.group == e2?.group &&
+        e1?.dealerCode == e2?.dealerCode;
   }
 
   @override
@@ -229,7 +238,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.auditor,
         e?.aspm,
         e?.uid,
-        e?.group
+        e?.group,
+        e?.dealerCode
       ]);
 
   @override

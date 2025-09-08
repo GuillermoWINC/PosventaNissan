@@ -1,13 +1,13 @@
 import '/backend/firebase_storage/storage.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'ajustes_model.dart';
 export 'ajustes_model.dart';
 
@@ -59,10 +59,12 @@ class _AjustesWidgetState extends State<AjustesWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         drawer: Drawer(
           elevation: 16.0,
-          child: wrapWithModel(
-            model: _model.sideNavModel,
-            updateCallback: () => safeSetState(() {}),
-            child: SideNavWidget(),
+          child: WebViewAware(
+            child: wrapWithModel(
+              model: _model.sideNavModel,
+              updateCallback: () => safeSetState(() {}),
+              child: SideNavWidget(),
+            ),
           ),
         ),
         appBar: AppBar(
@@ -74,12 +76,12 @@ class _AjustesWidgetState extends State<AjustesWidget> {
             borderWidth: 1.0,
             buttonSize: 60.0,
             icon: Icon(
-              Icons.home,
+              Icons.menu_rounded,
               color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed(HomeWidget.routeName);
+              scaffoldKey.currentState!.openDrawer();
             },
           ),
           title: Text(
@@ -115,37 +117,6 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            if (responsiveVisibility(
-                              context: context,
-                              phone: false,
-                            ))
-                              Container(
-                                width: double.infinity,
-                                height: 24.0,
-                                decoration: BoxDecoration(),
-                              ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 0.0, 12.0),
-                              child: FlutterFlowIconButton(
-                                borderColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                borderRadius: 12.0,
-                                borderWidth: 1.0,
-                                buttonSize: 40.0,
-                                fillColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                icon: Icon(
-                                  Icons.arrow_back_rounded,
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  size: 24.0,
-                                ),
-                                onPressed: () async {
-                                  context.safePop();
-                                },
-                              ),
-                            ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 0.0, 20.0),
@@ -196,7 +167,8 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                               );
                                               if (selectedFiles != null) {
                                                 safeSetState(() => _model
-                                                    .isDataUploading = true);
+                                                        .isDataUploading_politicaComercialUpload2 =
+                                                    true);
                                                 var selectedUploadedFiles =
                                                     <FFUploadedFile>[];
 
@@ -235,7 +207,7 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                 } finally {
                                                   ScaffoldMessenger.of(context)
                                                       .hideCurrentSnackBar();
-                                                  _model.isDataUploading =
+                                                  _model.isDataUploading_politicaComercialUpload2 =
                                                       false;
                                                 }
                                                 if (selectedUploadedFiles
@@ -244,10 +216,10 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                     downloadUrls.length ==
                                                         selectedFiles.length) {
                                                   safeSetState(() {
-                                                    _model.uploadedLocalFile =
+                                                    _model.uploadedLocalFile_politicaComercialUpload2 =
                                                         selectedUploadedFiles
                                                             .first;
-                                                    _model.uploadedFileUrl =
+                                                    _model.uploadedFileUrl_politicaComercialUpload2 =
                                                         downloadUrls.first;
                                                   });
                                                   showUploadMessage(
@@ -266,7 +238,140 @@ class _AjustesWidgetState extends State<AjustesWidget> {
 
                                               FFAppState()
                                                       .politicaComercialPDF =
-                                                  _model.uploadedFileUrl;
+                                                  _model
+                                                      .uploadedFileUrl_politicaComercialUpload2;
+                                              safeSetState(() {});
+                                            },
+                                            text: 'Actualizar PDF',
+                                            icon: Icon(
+                                              Icons.update,
+                                              size: 20.0,
+                                            ),
+                                            options: FFButtonOptions(
+                                              width: 150.0,
+                                              height: 40.0,
+                                              padding: EdgeInsets.all(0.0),
+                                              iconPadding: EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primary,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily:
+                                                            'Nissan Brand',
+                                                        color: Colors.white,
+                                                        fontSize: 14.0,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                              elevation: 0.0,
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.all(16.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            'Ranking Concurso',
+                                            style: FlutterFlowTheme.of(context)
+                                                .headlineMedium
+                                                .override(
+                                                  fontFamily: 'Nissan Brand',
+                                                  fontSize: 20.0,
+                                                  letterSpacing: 0.0,
+                                                ),
+                                          ),
+                                          FFButtonWidget(
+                                            onPressed: () async {
+                                              final selectedFiles =
+                                                  await selectFiles(
+                                                allowedExtensions: ['pdf'],
+                                                multiFile: false,
+                                              );
+                                              if (selectedFiles != null) {
+                                                safeSetState(() => _model
+                                                        .isDataUploading_rankingConcurso =
+                                                    true);
+                                                var selectedUploadedFiles =
+                                                    <FFUploadedFile>[];
+
+                                                var downloadUrls = <String>[];
+                                                try {
+                                                  showUploadMessage(
+                                                    context,
+                                                    'Uploading file...',
+                                                    showLoading: true,
+                                                  );
+                                                  selectedUploadedFiles =
+                                                      selectedFiles
+                                                          .map((m) =>
+                                                              FFUploadedFile(
+                                                                name: m
+                                                                    .storagePath
+                                                                    .split('/')
+                                                                    .last,
+                                                                bytes: m.bytes,
+                                                              ))
+                                                          .toList();
+
+                                                  downloadUrls =
+                                                      (await Future.wait(
+                                                    selectedFiles.map(
+                                                      (f) async =>
+                                                          await uploadData(
+                                                              f.storagePath,
+                                                              f.bytes),
+                                                    ),
+                                                  ))
+                                                          .where(
+                                                              (u) => u != null)
+                                                          .map((u) => u!)
+                                                          .toList();
+                                                } finally {
+                                                  ScaffoldMessenger.of(context)
+                                                      .hideCurrentSnackBar();
+                                                  _model.isDataUploading_rankingConcurso =
+                                                      false;
+                                                }
+                                                if (selectedUploadedFiles
+                                                            .length ==
+                                                        selectedFiles.length &&
+                                                    downloadUrls.length ==
+                                                        selectedFiles.length) {
+                                                  safeSetState(() {
+                                                    _model.uploadedLocalFile_rankingConcurso =
+                                                        selectedUploadedFiles
+                                                            .first;
+                                                    _model.uploadedFileUrl_rankingConcurso =
+                                                        downloadUrls.first;
+                                                  });
+                                                  showUploadMessage(
+                                                    context,
+                                                    'Success!',
+                                                  );
+                                                } else {
+                                                  safeSetState(() {});
+                                                  showUploadMessage(
+                                                    context,
+                                                    'Failed to upload file',
+                                                  );
+                                                  return;
+                                                }
+                                              }
+
+                                              FFAppState().rankingConcursoPDF =
+                                                  _model
+                                                      .uploadedFileUrl_rankingConcurso;
                                               safeSetState(() {});
                                             },
                                             text: 'Actualizar PDF',
@@ -485,7 +590,7 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 20.0, 0.0, 0.0),
                               child: Text(
-                                'v2.2',
+                                'v3.0',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(

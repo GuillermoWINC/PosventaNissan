@@ -177,7 +177,9 @@ class _PoliticaComercialUpdateWidgetState
                               multiFile: false,
                             );
                             if (selectedFiles != null) {
-                              safeSetState(() => _model.isDataUploading = true);
+                              safeSetState(() => _model
+                                      .isDataUploading_politicaComercialUpload =
+                                  true);
                               var selectedUploadedFiles = <FFUploadedFile>[];
 
                               try {
@@ -195,12 +197,13 @@ class _PoliticaComercialUpdateWidgetState
                               } finally {
                                 ScaffoldMessenger.of(context)
                                     .hideCurrentSnackBar();
-                                _model.isDataUploading = false;
+                                _model.isDataUploading_politicaComercialUpload =
+                                    false;
                               }
                               if (selectedUploadedFiles.length ==
                                   selectedFiles.length) {
                                 safeSetState(() {
-                                  _model.uploadedLocalFile =
+                                  _model.uploadedLocalFile_politicaComercialUpload =
                                       selectedUploadedFiles.first;
                                 });
                                 showUploadMessage(
@@ -219,8 +222,10 @@ class _PoliticaComercialUpdateWidgetState
 
                             _model.docPolCom = true;
                             safeSetState(() {});
-                            FFAppState().politicaComercialPDF =
-                                _model.uploadedLocalFile.height!.toString();
+                            FFAppState().politicaComercialPDF = _model
+                                .uploadedLocalFile_politicaComercialUpload
+                                .height!
+                                .toString();
                             safeSetState(() {});
                           },
                           text: 'Subir',

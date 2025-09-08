@@ -10,6 +10,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'upload_documentation_new_model.dart';
 export 'upload_documentation_new_model.dart';
 
@@ -448,7 +449,7 @@ class _UploadDocumentationNewWidgetState
                                                                       if (selectedFiles !=
                                                                           null) {
                                                                         safeSetState(() =>
-                                                                            _model.isDataUploading1 =
+                                                                            _model.isDataUploading_newUploadDoc1 =
                                                                                 true);
                                                                         var selectedUploadedFiles =
                                                                             <FFUploadedFile>[];
@@ -480,7 +481,7 @@ class _UploadDocumentationNewWidgetState
                                                                         } finally {
                                                                           ScaffoldMessenger.of(context)
                                                                               .hideCurrentSnackBar();
-                                                                          _model.isDataUploading1 =
+                                                                          _model.isDataUploading_newUploadDoc1 =
                                                                               false;
                                                                         }
                                                                         if (selectedUploadedFiles.length == selectedFiles.length &&
@@ -488,9 +489,9 @@ class _UploadDocumentationNewWidgetState
                                                                                 selectedFiles.length) {
                                                                           safeSetState(
                                                                               () {
-                                                                            _model.uploadedLocalFile1 =
+                                                                            _model.uploadedLocalFile_newUploadDoc1 =
                                                                                 selectedUploadedFiles.first;
-                                                                            _model.uploadedFileUrl1 =
+                                                                            _model.uploadedFileUrl_newUploadDoc1 =
                                                                                 downloadUrls.first;
                                                                           });
                                                                           showUploadMessage(
@@ -696,7 +697,7 @@ class _UploadDocumentationNewWidgetState
                                                                       if (selectedFiles !=
                                                                           null) {
                                                                         safeSetState(() =>
-                                                                            _model.isDataUploading2 =
+                                                                            _model.isDataUploading_newUploadDoc2 =
                                                                                 true);
                                                                         var selectedUploadedFiles =
                                                                             <FFUploadedFile>[];
@@ -728,7 +729,7 @@ class _UploadDocumentationNewWidgetState
                                                                         } finally {
                                                                           ScaffoldMessenger.of(context)
                                                                               .hideCurrentSnackBar();
-                                                                          _model.isDataUploading2 =
+                                                                          _model.isDataUploading_newUploadDoc2 =
                                                                               false;
                                                                         }
                                                                         if (selectedUploadedFiles.length == selectedFiles.length &&
@@ -736,9 +737,9 @@ class _UploadDocumentationNewWidgetState
                                                                                 selectedFiles.length) {
                                                                           safeSetState(
                                                                               () {
-                                                                            _model.uploadedLocalFile2 =
+                                                                            _model.uploadedLocalFile_newUploadDoc2 =
                                                                                 selectedUploadedFiles.first;
-                                                                            _model.uploadedFileUrl2 =
+                                                                            _model.uploadedFileUrl_newUploadDoc2 =
                                                                                 downloadUrls.first;
                                                                           });
                                                                           showUploadMessage(
@@ -944,7 +945,7 @@ class _UploadDocumentationNewWidgetState
                                                                       if (selectedFiles !=
                                                                           null) {
                                                                         safeSetState(() =>
-                                                                            _model.isDataUploading3 =
+                                                                            _model.isDataUploading_newUploadDoc3 =
                                                                                 true);
                                                                         var selectedUploadedFiles =
                                                                             <FFUploadedFile>[];
@@ -976,7 +977,7 @@ class _UploadDocumentationNewWidgetState
                                                                         } finally {
                                                                           ScaffoldMessenger.of(context)
                                                                               .hideCurrentSnackBar();
-                                                                          _model.isDataUploading3 =
+                                                                          _model.isDataUploading_newUploadDoc3 =
                                                                               false;
                                                                         }
                                                                         if (selectedUploadedFiles.length == selectedFiles.length &&
@@ -984,9 +985,9 @@ class _UploadDocumentationNewWidgetState
                                                                                 selectedFiles.length) {
                                                                           safeSetState(
                                                                               () {
-                                                                            _model.uploadedLocalFile3 =
+                                                                            _model.uploadedLocalFile_newUploadDoc3 =
                                                                                 selectedUploadedFiles.first;
-                                                                            _model.uploadedFileUrl3 =
+                                                                            _model.uploadedFileUrl_newUploadDoc3 =
                                                                                 downloadUrls.first;
                                                                           });
                                                                           showUploadMessage(
@@ -1650,12 +1651,12 @@ class _UploadDocumentationNewWidgetState
                                                       .text,
                                                   checkDR: _model
                                                       .checkboxListTileValue,
-                                                  doc1file:
-                                                      _model.uploadedFileUrl1,
-                                                  doc2file:
-                                                      _model.uploadedFileUrl2,
-                                                  doc3file:
-                                                      _model.uploadedFileUrl3,
+                                                  doc1file: _model
+                                                      .uploadedFileUrl_newUploadDoc1,
+                                                  doc2file: _model
+                                                      .uploadedFileUrl_newUploadDoc2,
+                                                  doc3file: _model
+                                                      .uploadedFileUrl_newUploadDoc3,
                                                   taskDone: true,
                                                   auditResult: 'Enviada',
                                                   telephone: _model
@@ -1696,19 +1697,21 @@ class _UploadDocumentationNewWidgetState
                                               await showDialog(
                                                 context: context,
                                                 builder: (alertDialogContext) {
-                                                  return AlertDialog(
-                                                    title: Text(
-                                                        'Documentación enviada'),
-                                                    content: Text(
-                                                        'Se ha enviado la documentación.'),
-                                                    actions: [
-                                                      TextButton(
-                                                        onPressed: () =>
-                                                            Navigator.pop(
-                                                                alertDialogContext),
-                                                        child: Text('Ok'),
-                                                      ),
-                                                    ],
+                                                  return WebViewAware(
+                                                    child: AlertDialog(
+                                                      title: Text(
+                                                          'Documentación enviada'),
+                                                      content: Text(
+                                                          'Se ha enviado la documentación.'),
+                                                      actions: [
+                                                        TextButton(
+                                                          onPressed: () =>
+                                                              Navigator.pop(
+                                                                  alertDialogContext),
+                                                          child: Text('Ok'),
+                                                        ),
+                                                      ],
+                                                    ),
                                                   );
                                                 },
                                               );

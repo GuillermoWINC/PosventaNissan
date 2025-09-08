@@ -1,6 +1,6 @@
 import '/backend/backend.dart';
 import '/backend/custom_cloud_functions/custom_cloud_function_response_manager.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -15,6 +15,7 @@ import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'auth_create_user_admin_login_model.dart';
 export 'auth_create_user_admin_login_model.dart';
 
@@ -130,10 +131,12 @@ class _AuthCreateUserAdminLoginWidgetState
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             drawer: Drawer(
               elevation: 16.0,
-              child: wrapWithModel(
-                model: _model.sideNavModel,
-                updateCallback: () => safeSetState(() {}),
-                child: SideNavWidget(),
+              child: WebViewAware(
+                child: wrapWithModel(
+                  model: _model.sideNavModel,
+                  updateCallback: () => safeSetState(() {}),
+                  child: SideNavWidget(),
+                ),
               ),
             ),
             appBar: AppBar(
@@ -1442,17 +1445,19 @@ class _AuthCreateUserAdminLoginWidgetState
                                                     context: context,
                                                     builder:
                                                         (alertDialogContext) {
-                                                      return AlertDialog(
-                                                        title: Text(
-                                                            'Usuario creado correctamente'),
-                                                        actions: [
-                                                          TextButton(
-                                                            onPressed: () =>
-                                                                Navigator.pop(
-                                                                    alertDialogContext),
-                                                            child: Text('Ok'),
-                                                          ),
-                                                        ],
+                                                      return WebViewAware(
+                                                        child: AlertDialog(
+                                                          title: Text(
+                                                              'Usuario creado correctamente'),
+                                                          actions: [
+                                                            TextButton(
+                                                              onPressed: () =>
+                                                                  Navigator.pop(
+                                                                      alertDialogContext),
+                                                              child: Text('Ok'),
+                                                            ),
+                                                          ],
+                                                        ),
                                                       );
                                                     },
                                                   );
@@ -1549,19 +1554,21 @@ class _AuthCreateUserAdminLoginWidgetState
                                                     context: context,
                                                     builder:
                                                         (alertDialogContext) {
-                                                      return AlertDialog(
-                                                        title: Text('Error'),
-                                                        content: Text(_model
-                                                            .newUser2!
-                                                            .errorCode!),
-                                                        actions: [
-                                                          TextButton(
-                                                            onPressed: () =>
-                                                                Navigator.pop(
-                                                                    alertDialogContext),
-                                                            child: Text('Ok'),
-                                                          ),
-                                                        ],
+                                                      return WebViewAware(
+                                                        child: AlertDialog(
+                                                          title: Text('Error'),
+                                                          content: Text(_model
+                                                              .newUser2!
+                                                              .errorCode!),
+                                                          actions: [
+                                                            TextButton(
+                                                              onPressed: () =>
+                                                                  Navigator.pop(
+                                                                      alertDialogContext),
+                                                              child: Text('Ok'),
+                                                            ),
+                                                          ],
+                                                        ),
                                                       );
                                                     },
                                                   );

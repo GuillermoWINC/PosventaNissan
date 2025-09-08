@@ -491,7 +491,7 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                               }
 
                                               context.goNamedAuth(
-                                                  HomeWidget.routeName,
+                                                  PanelControlWidget.routeName,
                                                   context.mounted);
                                             },
                                             text: 'Login',

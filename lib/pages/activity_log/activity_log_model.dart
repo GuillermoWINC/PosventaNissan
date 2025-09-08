@@ -1,8 +1,7 @@
-import '/components/date_picker_widget.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
+import '/components/varios/date_picker/date_picker_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
-import '/index.dart';
 import 'activity_log_widget.dart' show ActivityLogWidget;
 import 'package:flutter/material.dart';
 

@@ -1,6 +1,5 @@
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'plantilla_pagina_widget.dart' show PlantillaPaginaWidget;
 import 'package:flutter/material.dart';
 

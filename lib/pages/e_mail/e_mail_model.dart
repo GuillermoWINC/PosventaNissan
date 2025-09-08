@@ -1,7 +1,6 @@
 import '/backend/api_requests/api_calls.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'e_mail_widget.dart' show EMailWidget;
 import 'package:flutter/material.dart';
 

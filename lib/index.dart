@@ -31,17 +31,29 @@ export '/pages/tasks/tasks_n_i_b_s_a_conces/tasks_n_i_b_s_a_conces_widget.dart'
 export '/pages/tasks/tasks_all/tasks_all_widget.dart' show TasksAllWidget;
 export '/auth_flow/auth_create_user_admin_login/auth_create_user_admin_login_widget.dart'
     show AuthCreateUserAdminLoginWidget;
-export '/pages/estatus_n_i_b_s_a/estatus_n_i_b_s_a_widget.dart'
+export '/pages/estatus/estatus_n_i_b_s_a/estatus_n_i_b_s_a_widget.dart'
     show EstatusNIBSAWidget;
 export '/pages/ajustes/ajustes_widget.dart' show AjustesWidget;
 export '/pages/activity_log/activity_log_widget.dart' show ActivityLogWidget;
 export '/pages/plantilla_pagina/plantilla_pagina_widget.dart'
     show PlantillaPaginaWidget;
-export '/pages/estatus_conces/estatus_conces_widget.dart'
+export '/pages/estatus/estatus_conces/estatus_conces_widget.dart'
     show EstatusConcesWidget;
 export '/pages/panel_control/panel_control_widget.dart' show PanelControlWidget;
-export '/pages/estatus_a_s_p_my_audit/estatus_a_s_p_my_audit_widget.dart'
+export '/pages/estatus/estatus_a_s_p_my_audit/estatus_a_s_p_my_audit_widget.dart'
     show EstatusASPMyAuditWidget;
 export '/pages/e_mail/e_mail_widget.dart' show EMailWidget;
 export '/pages/tasks/detalles_tarea_n_i_b_s_a/detalles_tarea_n_i_b_s_a_widget.dart'
     show DetallesTareaNIBSAWidget;
+export '/pages/contacto/contacto_widget.dart' show ContactoWidget;
+export '/pages/materiales_v_e/materiales_v_e_widget.dart'
+    show MaterialesVEWidget;
+export '/pages/bono_v_e/bono_v_e_widget.dart' show BonoVEWidget;
+export '/pages/incentivos_v_e/incentivos_v_e_widget.dart'
+    show IncentivosVEWidget;
+export '/pages/concurso_v_e/concurso_v_e_widget.dart' show ConcursoVEWidget;
+export '/pages/bono_v_e_old/bono_v_e_old_widget.dart' show BonoVEOldWidget;
+export '/pages/bono_v_e_conces/bono_v_e_conces_widget.dart'
+    show BonoVEConcesWidget;
+export '/pages/concurso_v_e_conces/concurso_v_e_conces_widget.dart'
+    show ConcursoVEConcesWidget;

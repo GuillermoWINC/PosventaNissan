@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'user_model.dart';
 export 'user_model.dart';
 
@@ -158,6 +159,19 @@ class _UserWidgetState extends State<UserWidget> {
                                       ),
                                 ),
                               ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    20.0, 0.0, 0.0, 0.0),
+                                child: Text(
+                                  widget.userDoc!.dealerCode,
+                                  style: FlutterFlowTheme.of(context)
+                                      .labelLarge
+                                      .override(
+                                        fontFamily: 'Nissan Brand',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                              ),
                             ],
                           ),
                         ),
@@ -230,27 +244,30 @@ class _UserWidgetState extends State<UserWidget> {
                                         await showDialog<bool>(
                                               context: context,
                                               builder: (alertDialogContext) {
-                                                return AlertDialog(
-                                                  title: Text('BORRAR USUARIO'),
-                                                  content: Text(
-                                                      '¿Estás seguro de que quieres borrar este usuario? Esta acción no se puede deshacer.'),
-                                                  actions: [
-                                                    TextButton(
-                                                      onPressed: () =>
-                                                          Navigator.pop(
-                                                              alertDialogContext,
-                                                              false),
-                                                      child: Text('Cancelar'),
-                                                    ),
-                                                    TextButton(
-                                                      onPressed: () =>
-                                                          Navigator.pop(
-                                                              alertDialogContext,
-                                                              true),
-                                                      child: Text(
-                                                          'Borrar Usuario'),
-                                                    ),
-                                                  ],
+                                                return WebViewAware(
+                                                  child: AlertDialog(
+                                                    title:
+                                                        Text('BORRAR USUARIO'),
+                                                    content: Text(
+                                                        '¿Estás seguro de que quieres borrar este usuario? Esta acción no se puede deshacer.'),
+                                                    actions: [
+                                                      TextButton(
+                                                        onPressed: () =>
+                                                            Navigator.pop(
+                                                                alertDialogContext,
+                                                                false),
+                                                        child: Text('Cancelar'),
+                                                      ),
+                                                      TextButton(
+                                                        onPressed: () =>
+                                                            Navigator.pop(
+                                                                alertDialogContext,
+                                                                true),
+                                                        child: Text(
+                                                            'Borrar Usuario'),
+                                                      ),
+                                                    ],
+                                                  ),
                                                 );
                                               },
                                             ) ??

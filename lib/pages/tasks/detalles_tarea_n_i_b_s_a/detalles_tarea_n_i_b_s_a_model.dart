@@ -1,5 +1,5 @@
 import '/backend/backend.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'detalles_tarea_n_i_b_s_a_widget.dart' show DetallesTareaNIBSAWidget;

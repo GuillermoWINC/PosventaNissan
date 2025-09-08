@@ -1,6 +1,5 @@
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'tasks_conces_widget.dart' show TasksConcesWidget;
 import 'package:flutter/material.dart';
 

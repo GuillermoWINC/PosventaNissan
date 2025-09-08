@@ -3,16 +3,16 @@ import '/backend/backend.dart';
 import '/backend/custom_cloud_functions/custom_cloud_function_response_manager.dart';
 import '/components/estatus_tareas/estatus_comp/estatus_comp_widget.dart';
 import '/components/estatus_tareas/lista_tareas/lista_tareas_widget.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
-import '/index.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'estatus_n_i_b_s_a_model.dart';
 export 'estatus_n_i_b_s_a_model.dart';
 
@@ -58,10 +58,12 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         drawer: Drawer(
           elevation: 16.0,
-          child: wrapWithModel(
-            model: _model.sideNavModel,
-            updateCallback: () => safeSetState(() {}),
-            child: SideNavWidget(),
+          child: WebViewAware(
+            child: wrapWithModel(
+              model: _model.sideNavModel,
+              updateCallback: () => safeSetState(() {}),
+              child: SideNavWidget(),
+            ),
           ),
         ),
         appBar: AppBar(
@@ -73,12 +75,12 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
             borderWidth: 1.0,
             buttonSize: 60.0,
             icon: Icon(
-              Icons.home,
+              Icons.menu_rounded,
               color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed(HomeWidget.routeName);
+              scaffoldKey.currentState!.openDrawer();
             },
           ),
           title: Text(
@@ -139,37 +141,6 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                if (responsiveVisibility(
-                                  context: context,
-                                  phone: false,
-                                ))
-                                  Container(
-                                    width: double.infinity,
-                                    height: 24.0,
-                                    decoration: BoxDecoration(),
-                                  ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      16.0, 0.0, 0.0, 12.0),
-                                  child: FlutterFlowIconButton(
-                                    borderColor: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    borderRadius: 12.0,
-                                    borderWidth: 1.0,
-                                    buttonSize: 40.0,
-                                    fillColor: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    icon: Icon(
-                                      Icons.arrow_back_rounded,
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      size: 24.0,
-                                    ),
-                                    onPressed: () async {
-                                      context.safePop();
-                                    },
-                                  ),
-                                ),
                                 Padding(
                                   padding: EdgeInsets.all(16.0),
                                   child: Row(
@@ -208,7 +179,7 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
                                               'kA9KRFtfDSqAdcMGITJ4',
                                               'noRgF0fM6ObQqCibOgje',
                                               'o2ANMv9w7UdS6yrtvJmF',
-                                              'noRgF0fM6ObQqCibOgje',
+                                              'MID2GVTKWdXSiIUiRKnz',
                                               'HweuenfHytB0nIzxKU6W',
                                               'JjLqzQ2twMkEjJ5874tC'
                                             ]),
@@ -223,7 +194,7 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
                                               'Estandar 8 - Segmentación',
                                               'Estandar 9 - Herram. CRM',
                                               'Estandar 10 - Fidelización',
-                                              'Estandar 11 - CRM',
+                                              'Estandar 11 - Acción Reconquista',
                                               'Estandar 12 - Gestión Canal',
                                               'Estandar 13 - Contact Center'
                                             ],
@@ -385,20 +356,22 @@ class _EstatusNIBSAWidgetState extends State<EstatusNIBSAWidget> {
                                                   enableDrag: false,
                                                   context: context,
                                                   builder: (context) {
-                                                    return GestureDetector(
-                                                      onTap: () {
-                                                        FocusScope.of(context)
-                                                            .unfocus();
-                                                        FocusManager.instance
-                                                            .primaryFocus
-                                                            ?.unfocus();
-                                                      },
-                                                      child: Padding(
-                                                        padding: MediaQuery
-                                                            .viewInsetsOf(
-                                                                context),
-                                                        child:
-                                                            ListaTareasWidget(),
+                                                    return WebViewAware(
+                                                      child: GestureDetector(
+                                                        onTap: () {
+                                                          FocusScope.of(context)
+                                                              .unfocus();
+                                                          FocusManager.instance
+                                                              .primaryFocus
+                                                              ?.unfocus();
+                                                        },
+                                                        child: Padding(
+                                                          padding: MediaQuery
+                                                              .viewInsetsOf(
+                                                                  context),
+                                                          child:
+                                                              ListaTareasWidget(),
+                                                        ),
                                                       ),
                                                     );
                                                   },

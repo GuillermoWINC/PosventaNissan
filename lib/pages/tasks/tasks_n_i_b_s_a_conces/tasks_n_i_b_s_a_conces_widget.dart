@@ -1,14 +1,14 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/components/listados_tareas/task/task_widget.dart';
-import '/components/varios/side_nav/side_nav_widget.dart';
+import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'tasks_n_i_b_s_a_conces_model.dart';
 export 'tasks_n_i_b_s_a_conces_model.dart';
 
@@ -94,10 +94,12 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             drawer: Drawer(
               elevation: 16.0,
-              child: wrapWithModel(
-                model: _model.sideNavModel,
-                updateCallback: () => safeSetState(() {}),
-                child: SideNavWidget(),
+              child: WebViewAware(
+                child: wrapWithModel(
+                  model: _model.sideNavModel,
+                  updateCallback: () => safeSetState(() {}),
+                  child: SideNavWidget(),
+                ),
               ),
             ),
             appBar: AppBar(
@@ -109,12 +111,12 @@ class _TasksNIBSAConcesWidgetState extends State<TasksNIBSAConcesWidget> {
                 borderWidth: 1.0,
                 buttonSize: 60.0,
                 icon: Icon(
-                  Icons.home,
+                  Icons.menu_rounded,
                   color: Colors.white,
                   size: 30.0,
                 ),
                 onPressed: () async {
-                  context.pushNamed(HomeWidget.routeName);
+                  scaffoldKey.currentState!.openDrawer();
                 },
               ),
               title: Text(

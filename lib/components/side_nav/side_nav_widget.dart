@@ -530,7 +530,12 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                             'Concesionario') {
                           context.pushNamed(BonoVEConcesWidget.routeName);
                         } else {
-                          context.pushNamed(BonoVEWidget.routeName);
+                          if (valueOrDefault(currentUserDocument?.role, '') ==
+                              'NIBSA') {
+                            context.pushNamed(BonoVEWidget.routeName);
+                          } else {
+                            context.pushNamed(BonoVEAuditorWidget.routeName);
+                          }
                         }
                       },
                       child: AnimatedContainer(
@@ -584,8 +589,8 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                       hoverColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onTap: () async {
-                        if (valueOrDefault(currentUserDocument?.role, '') ==
-                            'Concesionario') {
+                        if (valueOrDefault(currentUserDocument?.role, '') !=
+                            'NIBSA') {
                           context.pushNamed(ConcursoVEConcesWidget.routeName);
                         } else {
                           context.pushNamed(ConcursoVEWidget.routeName);

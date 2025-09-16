@@ -57,3 +57,5 @@ export '/pages/bono_v_e_conces/bono_v_e_conces_widget.dart'
     show BonoVEConcesWidget;
 export '/pages/concurso_v_e_conces/concurso_v_e_conces_widget.dart'
     show ConcursoVEConcesWidget;
+export '/pages/bono_v_e_auditor/bono_v_e_auditor_widget.dart'
+    show BonoVEAuditorWidget;

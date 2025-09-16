@@ -352,6 +352,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: ConcursoVEConcesWidget.routeName,
           path: ConcursoVEConcesWidget.routePath,
           builder: (context, params) => ConcursoVEConcesWidget(),
+        ),
+        FFRoute(
+          name: BonoVEAuditorWidget.routeName,
+          path: BonoVEAuditorWidget.routePath,
+          builder: (context, params) => BonoVEAuditorWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

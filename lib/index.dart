@@ -48,14 +48,15 @@ export '/pages/tasks/detalles_tarea_n_i_b_s_a/detalles_tarea_n_i_b_s_a_widget.da
 export '/pages/contacto/contacto_widget.dart' show ContactoWidget;
 export '/pages/materiales_v_e/materiales_v_e_widget.dart'
     show MaterialesVEWidget;
-export '/pages/bono_v_e/bono_v_e_widget.dart' show BonoVEWidget;
+export '/pages/bono_v_e/bono_v_e/bono_v_e_widget.dart' show BonoVEWidget;
 export '/pages/incentivos_v_e/incentivos_v_e_widget.dart'
     show IncentivosVEWidget;
 export '/pages/concurso_v_e/concurso_v_e_widget.dart' show ConcursoVEWidget;
-export '/pages/bono_v_e_old/bono_v_e_old_widget.dart' show BonoVEOldWidget;
-export '/pages/bono_v_e_conces/bono_v_e_conces_widget.dart'
+export '/pages/bono_v_e/bono_v_e_old/bono_v_e_old_widget.dart'
+    show BonoVEOldWidget;
+export '/pages/bono_v_e/bono_v_e_conces/bono_v_e_conces_widget.dart'
     show BonoVEConcesWidget;
 export '/pages/concurso_v_e_conces/concurso_v_e_conces_widget.dart'
     show ConcursoVEConcesWidget;
-export '/pages/bono_v_e_auditor/bono_v_e_auditor_widget.dart'
+export '/pages/bono_v_e/bono_v_e_auditor/bono_v_e_auditor_widget.dart'
     show BonoVEAuditorWidget;

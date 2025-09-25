@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 class AjustesModel extends FlutterFlowModel<AjustesWidget> {
   ///  State fields for stateful widgets in this page.
 
-  bool isDataUploading_politicaComercialUpload2 = false;
-  FFUploadedFile uploadedLocalFile_politicaComercialUpload2 =
+  bool isDataUploading_politicaComercialUpload3 = false;
+  FFUploadedFile uploadedLocalFile_politicaComercialUpload3 =
       FFUploadedFile(bytes: Uint8List.fromList([]));
-  String uploadedFileUrl_politicaComercialUpload2 = '';
+  String uploadedFileUrl_politicaComercialUpload3 = '';
 
   bool isDataUploading_rankingConcurso = false;
   FFUploadedFile uploadedLocalFile_rankingConcurso =

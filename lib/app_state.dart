@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '/backend/backend.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 
 class FFAppState extends ChangeNotifier {
@@ -15,12 +15,20 @@ class FFAppState extends ChangeNotifier {
     _instance = FFAppState._internal();
   }
 
-  Future initializePersistedState() async {}
+  Future initializePersistedState() async {
+    prefs = await SharedPreferences.getInstance();
+    _safeInit(() {
+      _polComercialDoc =
+          prefs.getString('ff_polComercialDoc')?.ref ?? _polComercialDoc;
+    });
+  }
 
   void update(VoidCallback callback) {
     callback();
     notifyListeners();
   }
+
+  late SharedPreferences prefs;
 
   List<DocumentReference> _auditors = [];
   List<DocumentReference> get auditors => _auditors;
@@ -230,7 +238,7 @@ class FFAppState extends ChangeNotifier {
     tareasTodas.insert(index, value);
   }
 
-  String _contactoNibsa = '';
+  String _contactoNibsa = 'jqueiro@nissan.es';
   String get contactoNibsa => _contactoNibsa;
   set contactoNibsa(String value) {
     _contactoNibsa = value;
@@ -375,4 +383,26 @@ class FFAppState extends ChangeNotifier {
   set rankingConcursoPDF(String value) {
     _rankingConcursoPDF = value;
   }
+
+  DocumentReference? _polComercialDoc =
+      FirebaseFirestore.instance.doc('/settings/9NfzGgzJmYzlu8USWBMs');
+  DocumentReference? get polComercialDoc => _polComercialDoc;
+  set polComercialDoc(DocumentReference? value) {
+    _polComercialDoc = value;
+    value != null
+        ? prefs.setString('ff_polComercialDoc', value.path)
+        : prefs.remove('ff_polComercialDoc');
+  }
+}
+
+void _safeInit(Function() initializeField) {
+  try {
+    initializeField();
+  } catch (_) {}
+}
+
+Future _safeInitAsync(Function() initializeField) async {
+  try {
+    await initializeField();
+  } catch (_) {}
 }

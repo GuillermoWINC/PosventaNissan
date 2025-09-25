@@ -1,3 +1,4 @@
+import '/backend/backend.dart';
 import '/backend/firebase_storage/storage.dart';
 import '/components/side_nav/side_nav_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -167,7 +168,7 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                               );
                                               if (selectedFiles != null) {
                                                 safeSetState(() => _model
-                                                        .isDataUploading_politicaComercialUpload2 =
+                                                        .isDataUploading_politicaComercialUpload3 =
                                                     true);
                                                 var selectedUploadedFiles =
                                                     <FFUploadedFile>[];
@@ -207,7 +208,7 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                 } finally {
                                                   ScaffoldMessenger.of(context)
                                                       .hideCurrentSnackBar();
-                                                  _model.isDataUploading_politicaComercialUpload2 =
+                                                  _model.isDataUploading_politicaComercialUpload3 =
                                                       false;
                                                 }
                                                 if (selectedUploadedFiles
@@ -216,10 +217,10 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                     downloadUrls.length ==
                                                         selectedFiles.length) {
                                                   safeSetState(() {
-                                                    _model.uploadedLocalFile_politicaComercialUpload2 =
+                                                    _model.uploadedLocalFile_politicaComercialUpload3 =
                                                         selectedUploadedFiles
                                                             .first;
-                                                    _model.uploadedFileUrl_politicaComercialUpload2 =
+                                                    _model.uploadedFileUrl_politicaComercialUpload3 =
                                                         downloadUrls.first;
                                                   });
                                                   showUploadMessage(
@@ -239,8 +240,18 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                               FFAppState()
                                                       .politicaComercialPDF =
                                                   _model
-                                                      .uploadedFileUrl_politicaComercialUpload2;
-                                              safeSetState(() {});
+                                                      .uploadedFileUrl_politicaComercialUpload3;
+                                              FFAppState().update(() {});
+
+                                              await FFAppState()
+                                                  .polComercialDoc!
+                                                  .update(
+                                                      createSettingsRecordData(
+                                                    politicaComercial:
+                                                        FFAppState()
+                                                            .polComercialDoc
+                                                            ?.path,
+                                                  ));
                                             },
                                             text: 'Actualizar PDF',
                                             icon: Icon(
@@ -373,6 +384,15 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                                   _model
                                                       .uploadedFileUrl_rankingConcurso;
                                               safeSetState(() {});
+
+                                              await FFAppState()
+                                                  .polComercialDoc!
+                                                  .update(
+                                                      createSettingsRecordData(
+                                                    rankingConcurso:
+                                                        FFAppState()
+                                                            .rankingConcursoPDF,
+                                                  ));
                                             },
                                             text: 'Actualizar PDF',
                                             icon: Icon(
@@ -534,6 +554,14 @@ class _AjustesWidgetState extends State<AjustesWidget> {
                                               FFAppState().contactoNibsa =
                                                   _model.textController.text;
                                               safeSetState(() {});
+
+                                              await FFAppState()
+                                                  .polComercialDoc!
+                                                  .update(
+                                                      createSettingsRecordData(
+                                                    contactoNissan: FFAppState()
+                                                        .contactoNibsa,
+                                                  ));
                                               ScaffoldMessenger.of(context)
                                                   .showSnackBar(
                                                 SnackBar(

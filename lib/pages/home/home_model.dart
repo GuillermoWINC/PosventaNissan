@@ -22,6 +22,10 @@ class HomeModel extends FlutterFlowModel<HomeWidget> {
   List<AssignmentsRecord>? tasksAll;
   // Stores action output result for [Firestore Query - Query a collection] action in home widget.
   List<UsersRecord>? concesionarios;
+  // Stores action output result for [Firestore Query - Query a collection] action in home widget.
+  SettingsRecord? polCom;
+  // Stores action output result for [Firestore Query - Query a collection] action in home widget.
+  SettingsRecord? contacto;
   // Model for sideNav component.
   late SideNavModel sideNavModel;
 

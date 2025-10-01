@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebase';
+import { supabase } from '../firebase';
 import './Login.css';
 
 function Login() {
@@ -15,7 +14,15 @@ function Login() {
     setLoading(true);
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const { error: signInError } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+
+      if (signInError) {
+        setError('Credenciales incorrectas. Por favor, inténtalo de nuevo.');
+        console.error('Login error:', signInError);
+      }
     } catch (err) {
       setError('Credenciales incorrectas. Por favor, inténtalo de nuevo.');
       console.error('Login error:', err);

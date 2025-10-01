@@ -1,11 +1,10 @@
-import { signOut } from 'firebase/auth';
-import { auth } from '../firebase';
+import { supabase } from '../firebase';
 import './Home.css';
 
 function Home({ user, userData }) {
   const handleLogout = async () => {
     try {
-      await signOut(auth);
+      await supabase.auth.signOut();
     } catch (error) {
       console.error('Logout error:', error);
     }
